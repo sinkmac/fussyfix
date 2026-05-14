@@ -6,6 +6,23 @@ export const siteMeta = {
   url: 'https://fussyfix.co.uk'
 } as const;
 
+export const affiliateLinks = {
+  iceland: {
+    label: 'Shop the ingredients at Iceland',
+    url: null,
+    status: 'pending',
+    network: 'Awin',
+    merchantId: '7868'
+  },
+  gousto: {
+    label: 'Get ingredients delivered as a recipe box',
+    url: null,
+    status: 'pending',
+    network: 'Awin',
+    merchantId: null
+  }
+} as const;
+
 export const generatorCopy = {
   eyebrow: 'Free meal ideas for fussy eaters',
   title: 'Turn the foods they already trust into five fresh meal ideas.',
@@ -21,7 +38,9 @@ export const generatorCopy = {
     'Enter the foods your child already feels safe with, then FussyFix will turn them into five practical ideas.',
   affiliatePlaceholderTitle: 'Helpful next step',
   affiliatePlaceholderBody:
-    'If you want a low-effort dinner shortcut after trying these ideas, this is where the Gousto partner link will sit.'
+    'If you want to make these meals without the supermarket run, Iceland delivers to most UK addresses — good for stocking up on the ingredients your child already trusts.',
+  affiliateDisclosure:
+    'When affiliate links are live, FussyFix may earn a commission if you buy through them. No placeholder shopping links are shown.'
 } as const;
 
 export const editorialPages = [

@@ -140,6 +140,19 @@ select {
   margin-top: 1rem;
 }
 
+.affiliate-disclosure {
+  color: #8d6d66;
+  font-size: 0.9rem;
+}
+
+.affiliate-button,
+.affiliate-secondary-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  color: #bf5246;
+  font-weight: 700;
+}
+
 .article-body p + p {
   margin-top: 1rem;
 }
