@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { affiliateLinks, generatorCopy, siteMeta } from '$lib/content';
+  import { generatorCopy, siteMeta } from '$lib/content';
 
   const ageOptions = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
 
@@ -90,22 +90,6 @@
           {/each}
         </div>
       {/if}
-
-      <div class="affiliate-placeholder">
-        <h3>{generatorCopy.affiliatePlaceholderTitle}</h3>
-        <p>{generatorCopy.affiliatePlaceholderBody}</p>
-        {#if affiliateLinks.iceland.url}
-          <a class="affiliate-button" href={affiliateLinks.iceland.url} rel="sponsored nofollow noopener" target="_blank">
-            {affiliateLinks.iceland.label}
-          </a>
-        {/if}
-        {#if affiliateLinks.gousto.url}
-          <a class="affiliate-secondary-link" href={affiliateLinks.gousto.url} rel="sponsored nofollow noopener" target="_blank">
-            {affiliateLinks.gousto.label}
-          </a>
-        {/if}
-        <p class="affiliate-disclosure">{generatorCopy.affiliateDisclosure}</p>
-      </div>
     </section>
   </main>
 </section>

@@ -3,3 +3,39 @@ command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "22"
+
+[[redirects]]
+from = "/privacy-policy"
+to = "/privacy"
+status = 301
+force = true
+
+[[redirects]]
+from = "/why-is-my-child-a-fussy-eater"
+to = "/guides/beige-food-phase"
+status = 301
+force = true
+
+[[redirects]]
+from = "/foods-fussy-eaters-accept"
+to = "/guides/safe-foods-fussy-eaters"
+status = 301
+force = true
+
+[[redirects]]
+from = "/how-to-get-fussy-eater-to-try-new-foods"
+to = "/guides/mealtime-survival-scripts"
+status = 301
+force = true
+
+[[redirects]]
+from = "/meal-planning-fussy-eaters"
+to = "/guides/recipes-fussy-eaters-uk"
+status = 301
+force = true
+
+[[redirects]]
+from = "/nutrition-for-fussy-eaters"
+to = "/guides/nutrients-fussy-eater-uk"
+status = 301
+force = true

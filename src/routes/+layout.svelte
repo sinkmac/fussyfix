@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CookieConsent from '$lib/CookieConsent.svelte';
   import '../app.css';
 
   let { children } = $props();
@@ -11,12 +12,11 @@
 <header class="site-header">
   <a href="/" class="brand">FussyFix</a>
   <nav>
-    <a href="/why-is-my-child-a-fussy-eater">Why fussy eating happens</a>
-    <a href="/foods-fussy-eaters-accept">Foods they accept</a>
-    <a href="/how-to-get-fussy-eater-to-try-new-foods">Trying new foods</a>
-    <a href="/meal-planning-fussy-eaters">Meal planning</a>
-    <a href="/nutrition-for-fussy-eaters">Nutrition wins</a>
-    <a href="/privacy-policy">Privacy</a>
+    <a href="/guides/fussy-eating-or-arfid">Fussy eating or ARFID</a>
+    <a href="/guides/beige-food-phase">Beige food phase</a>
+    <a href="/guides/safe-foods-fussy-eaters">Safe foods</a>
+    <a href="/about">About</a>
+    <a href="/medical-disclaimer">Medical disclaimer</a>
   </nav>
 </header>
 
@@ -26,7 +26,15 @@
   <p>FussyFix</p>
   <nav>
     <a href="/">Home</a>
-    <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/why-is-my-child-a-fussy-eater">Why is my child such a fussy eater?</a>
+    <a href="/about">About</a>
+    <a href="/about/editorial-standards">Editorial standards</a>
+    <a href="/medical-disclaimer">Medical disclaimer</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/cookies">Cookies</a>
+    <a href="/terms">Terms</a>
+    <a href="/contact">Contact</a>
+    <a href="/affiliate-disclosure">Affiliate disclosure</a>
   </nav>
 </footer>
+
+<CookieConsent />

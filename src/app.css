@@ -121,6 +121,7 @@ select {
   background: #fffdfc;
 }
 
+.secondary-button,
 .primary-button {
   border: 0;
   border-radius: 0.9rem;
@@ -155,4 +156,88 @@ select {
 
 .article-body p + p {
   margin-top: 1rem;
+}
+
+.secondary-button {
+  background: #f7e4dd;
+  color: #2f221f;
+}
+
+.article-meta,
+.source-list,
+.related-links,
+.disclaimer-box,
+.template-box,
+.affiliate-note {
+  background: #fff4ef;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.article-meta {
+  color: #8d6d66;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.disclaimer-box {
+  border-left: 4px solid #bf5246;
+}
+
+.related-links {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.related-links .primary-button {
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.cookie-banner {
+  align-items: center;
+  background: #2f221f;
+  border-radius: 1.1rem;
+  bottom: 1rem;
+  box-shadow: 0 14px 40px rgba(47, 34, 31, 0.22);
+  color: #fff8f4;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr auto;
+  left: 50%;
+  max-width: min(920px, calc(100% - 2rem));
+  padding: 1rem;
+  position: fixed;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.cookie-banner p {
+  margin: 0.35rem 0 0;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+}
+
+.cookie-banner .secondary-button {
+  background: #fff8f4;
+}
+
+.cookie-banner .primary-button {
+  background: #f0a08f;
+  color: #2f221f;
+}
+
+@media (max-width: 760px) {
+  .cookie-banner {
+    grid-template-columns: 1fr;
+  }
 }
