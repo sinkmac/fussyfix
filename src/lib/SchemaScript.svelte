@@ -1,7 +1,9 @@
 <script lang="ts">
   let { schema }: { schema: Record<string, unknown> | Record<string, unknown>[] } = $props();
+
+  const schemaJson = $derived(JSON.stringify(schema).replace(/</g, '\u003c'));
 </script>
 
 <svelte:head>
-  <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
+  {@html `<script type="application/ld+json">${schemaJson}</script>`}
 </svelte:head>

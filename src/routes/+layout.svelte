@@ -7,6 +7,10 @@
 
 <svelte:head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="FussyFix | Free meal ideas for fussy eaters" />
+  <meta property="og:description" content="Start with foods your child already accepts and generate low-pressure meal ideas. Not medical advice or ARFID diagnosis." />
+  <meta property="og:url" content="https://fussyfix.co.uk" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <header class="site-header">

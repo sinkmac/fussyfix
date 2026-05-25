@@ -1,4 +1,5 @@
 <script lang="ts">
+  import SchemaScript from '$lib/SchemaScript.svelte';
   import { generatorCopy, siteMeta } from '$lib/content';
 
   const ageOptions = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
@@ -12,6 +13,33 @@
       .map((item) => item.trim())
       .filter(Boolean)
   );
+
+
+  const homepageSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        name: 'FussyFix',
+        url: siteMeta.url,
+        description: siteMeta.description
+      },
+      {
+        '@type': 'WebApplication',
+        name: 'FussyFix meal idea generator',
+        url: siteMeta.url,
+        description: siteMeta.description,
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: 'Web',
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' }
+      },
+      {
+        '@type': 'Organization',
+        name: 'AI Scotland Productions',
+        url: 'https://aiscotlandproductions.com'
+      }
+    ]
+  };
 
   const generatedMeals = $derived(
     safeFoodList.length === 0
@@ -30,7 +58,13 @@
   <title>{siteMeta.title}</title>
   <meta name="description" content={siteMeta.description} />
   <link rel="canonical" href={siteMeta.url} />
+  <meta property="og:title" content={siteMeta.title} />
+  <meta property="og:description" content={siteMeta.ogDescription} />
+  <meta property="og:url" content={siteMeta.url} />
+  <meta property="og:type" content="website" />
 </svelte:head>
+
+<SchemaScript schema={homepageSchema} />
 
 <section class="page-shell">
   <main class="page-grid">
@@ -43,6 +77,14 @@
           <li>{point}</li>
         {/each}
       </ul>
+      <section class="method-block" aria-labelledby="method-heading">
+        <h2 id="method-heading">Safe-food first, not pressure first.</h2>
+        <p>
+          FussyFix starts with foods your child already accepts and builds meal ideas inside that safe-food zone.
+          It is not medical advice, not an ARFID diagnosis, and not treatment. If eating feels unsafe, growth is affected,
+          or mealtimes are causing serious distress, speak to a GP, dietitian, or qualified clinician.
+        </p>
+      </section>
     </section>
 
     <section class="form-card">
@@ -52,7 +94,6 @@
           <textarea
             bind:value={safeFoods}
             rows="6"
-            placeholder="e.g. pasta, toast, chicken, peas, strawberries"
           ></textarea>
           <span class="field-help">Separate foods with commas or new lines.</span>
         </label>

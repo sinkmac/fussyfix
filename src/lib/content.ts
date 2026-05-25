@@ -3,6 +3,8 @@ export const siteMeta = {
   title: 'FussyFix | Free meal ideas for fussy eaters',
   description:
     'FussyFix is a free meal idea generator for parents of fussy eaters. Add safe foods, choose an age group, and get five warm, practical meal ideas.',
+  ogDescription:
+    'Start with foods your child already accepts and generate low-pressure meal ideas. Not medical advice or ARFID diagnosis.',
   url: 'https://fussyfix.co.uk'
 } as const;
 
@@ -36,9 +38,9 @@ export const generatorCopy = {
   resultsTitle: 'Meal ideas that stay inside the safe-food zone',
   resultsEmpty:
     'Enter the foods your child already feels safe with, then FussyFix will turn them into five practical ideas.',
-  affiliatePlaceholderTitle: 'Helpful next step',
-  affiliatePlaceholderBody:
-    'If you want to make these meals without the supermarket run, Iceland delivers to most UK addresses — good for stocking up on the ingredients your child already trusts.',
+  affiliatePanelTitle: 'Helpful next step',
+  affiliatePanelBody:
+    'If you want to make these meals without the supermarket run, grocery delivery can be useful for stocking up on ingredients your child already trusts.',
   affiliateDisclosure:
     'When affiliate links are live, FussyFix may earn a commission if you buy through them. No placeholder shopping links are shown.'
 } as const;
