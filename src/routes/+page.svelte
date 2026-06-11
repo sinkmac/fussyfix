@@ -1,5 +1,6 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
+  import SafeAdventurePromo from '$lib/SafeAdventurePromo.svelte';
   import { generatorCopy, siteMeta } from '$lib/content';
 
   const ageOptions = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
@@ -130,6 +131,7 @@
             </article>
           {/each}
         </div>
+        <SafeAdventurePromo />
       {/if}
     </section>
   </main>
