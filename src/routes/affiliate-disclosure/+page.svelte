@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Affiliate Disclosure',
+    description: 'Affiliate disclosure for FussyFix, including which pages may carry affiliate links.',
+    path: '/affiliate-disclosure'
+  });
 </script>
 
 <svelte:head>
-  <title>Affiliate Disclosure | FussyFix</title>
-  <meta name="description" content="Affiliate disclosure for FussyFix, including which pages may carry affiliate links." />
-  <link rel="canonical" href="https://fussyfix.co.uk/affiliate-disclosure" />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">

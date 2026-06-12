@@ -1,5 +1,6 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
+  import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
   const title = "Is This Fussy Eating or ARFID? A Parent's Honest Guide";
@@ -9,13 +10,18 @@
     { question: 'Can this page tell me if my child has ARFID?', answer: 'No. It can help you prepare for a GP conversation, but it cannot diagnose your child.' },
     { question: 'What should I track before speaking to the GP?', answer: 'Accepted foods, refused foods, weight or growth concerns, hydration, distress, social impact, and how long the pattern has been going on.' }
   ];
+  const meta = pageMeta({ title, description, path });
   const schema = [articleSchema({ title, description, path }), faqSchema(faqs)];
 </script>
 
 <svelte:head>
-  <title>{title} | FussyFix</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={`https://fussyfix.co.uk${path}`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 <SchemaScript {schema} />
 

@@ -1,5 +1,6 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
+  import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
   const title = 'The Beige Food Phase — Why It Happens and What Actually Helps';
@@ -9,13 +10,18 @@
     { question: 'Is beige food always a problem?', answer: 'Not always. Look at growth, energy, hydration, distress and whether the range is narrowing.' },
     { question: 'How many exposures can a new food need?', answer: 'Many children need repeated low-pressure exposure over time before a food feels familiar enough to try.' }
   ];
+  const meta = pageMeta({ title, description, path });
   const schema = [articleSchema({ title, description, path }), faqSchema(faqs)];
 </script>
 
 <svelte:head>
-  <title>{title} | FussyFix</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={`https://fussyfix.co.uk${path}`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 <SchemaScript {schema} />
 

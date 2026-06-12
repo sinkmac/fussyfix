@@ -1,11 +1,25 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
   let { data } = $props();
+
+  const meta = $derived(
+    pageMeta({
+      title: data.page.title,
+      description: data.page.body[0],
+      path: `/${data.page.slug}`
+    })
+  );
 </script>
 
 <svelte:head>
-  <title>{data.page.title} | FussyFix</title>
-  <meta name="description" content={data.page.body[0]} />
-  <link rel="canonical" href={`https://fussyfix.co.uk/${data.page.slug}`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 
 <section class="article-shell">

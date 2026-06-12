@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Editorial Standards and Sources',
+    description: 'How FussyFix handles sources, factual claims and health-adjacent content.',
+    path: '/about/editorial-standards'
+  });
 </script>
 
 <svelte:head>
-  <title>Editorial Standards and Sources | FussyFix</title>
-  <meta name="description" content="How FussyFix handles sources, factual claims and health-adjacent content." />
-  <link rel="canonical" href="https://fussyfix.co.uk/about/editorial-standards" />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">

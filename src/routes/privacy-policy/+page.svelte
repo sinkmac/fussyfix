@@ -1,14 +1,21 @@
 <script lang="ts">
-  import { siteMeta } from '$lib/content';
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Privacy Policy',
+    description: 'Privacy policy for FussyFix, including how the site handles meal generator input and analytics.',
+    path: '/privacy-policy'
+  });
 </script>
 
 <svelte:head>
-  <title>Privacy Policy | FussyFix</title>
-  <meta
-    name="description"
-    content="Privacy policy for FussyFix, including how the site handles meal generator input and analytics."
-  />
-  <link rel="canonical" href={`${siteMeta.url}/privacy-policy`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">

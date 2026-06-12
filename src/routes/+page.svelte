@@ -2,19 +2,24 @@
   import SchemaScript from '$lib/SchemaScript.svelte';
   import SafeAdventurePromo from '$lib/SafeAdventurePromo.svelte';
   import { generatorCopy, siteMeta } from '$lib/content';
+  import { generateIdeas, type AgeBand, type GenerationResult } from '$lib/generatorSafety';
+  import { pageMeta } from '$lib/pageMeta';
 
-  const ageOptions = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
+  const meta = pageMeta({
+    title: siteMeta.title,
+    description: siteMeta.description,
+    path: '/'
+  });
+
+  const ageOptions: AgeBand[] = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
 
   let safeFoods = $state('');
-  let ageGroup = $state('3–5 years');
+  let ageGroup = $state<AgeBand>('3–5 years');
+  let generationResult = $state<GenerationResult | null>(null);
 
-  const safeFoodList = $derived(
-    safeFoods
-      .split(/[,\n]/)
-      .map((item) => item.trim())
-      .filter(Boolean)
-  );
-
+  function handleGenerate() {
+    generationResult = generateIdeas({ input: safeFoods, ageBand: ageGroup });
+  }
 
   const homepageSchema = {
     '@context': 'https://schema.org',
@@ -42,26 +47,15 @@
     ]
   };
 
-  const generatedMeals = $derived(
-    safeFoodList.length === 0
-      ? []
-      : Array.from({ length: 5 }, (_, index) => {
-          const focus = safeFoodList[index % safeFoodList.length];
-          return {
-            title: `${focus} idea ${index + 1}`,
-            body: `A gentle ${ageGroup.toLowerCase()} meal idea built around ${focus}, with one small nutritional win and no pressure to push beyond the safe-food zone.`
-          };
-        })
-  );
 </script>
 
 <svelte:head>
-  <title>{siteMeta.title}</title>
-  <meta name="description" content={siteMeta.description} />
-  <link rel="canonical" href={siteMeta.url} />
-  <meta property="og:title" content={siteMeta.title} />
-  <meta property="og:description" content={siteMeta.ogDescription} />
-  <meta property="og:url" content={siteMeta.url} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
   <meta property="og:type" content="website" />
 </svelte:head>
 
@@ -89,7 +83,7 @@
     </section>
 
     <section class="form-card">
-      <form class="generator-form" onsubmit={(event) => event.preventDefault()}>
+      <form class="generator-form" onsubmit={(event) => { event.preventDefault(); handleGenerate(); }}>
         <label class="field">
           <span class="field-label">Safe foods</span>
           <textarea
@@ -109,30 +103,38 @@
         </label>
 
         <button class="primary-button" type="submit">Generate 5 meal ideas</button>
+        <div class="empty-state">{generatorCopy.resultsEmpty}</div>
       </form>
     </section>
 
-    <section class="results-card" aria-live="polite">
-      <div class="results-header">
-        <div>
-          <div class="eyebrow eyebrow--soft">Your results</div>
-          <h2>{generatorCopy.resultsTitle}</h2>
-        </div>
-      </div>
-
-      {#if generatedMeals.length === 0}
-        <div class="empty-state">{generatorCopy.resultsEmpty}</div>
-      {:else}
-        <div class="results-list">
-          {#each generatedMeals as meal}
-            <article class="result-item">
-              <h3>{meal.title}</h3>
-              <p>{meal.body}</p>
-            </article>
-          {/each}
-        </div>
-        <SafeAdventurePromo />
-      {/if}
-    </section>
+    {#if generationResult}
+      <section class="results-card" aria-live="polite">
+        {#if generationResult.status === 'ok'}
+          <div class="results-header">
+            <div>
+              <div class="eyebrow eyebrow--soft">Your results</div>
+              <h2>{generatorCopy.resultsTitle}</h2>
+            </div>
+          </div>
+          {#if generationResult.sideNote}
+            <div class="disclaimer-box">{generationResult.sideNote}</div>
+          {/if}
+          <div class="results-list">
+            {#each generationResult.ideas as meal}
+              <article class="result-item">
+                <h3>{meal.title}</h3>
+                <p>{meal.body}</p>
+                {#if meal.optionalVariation}
+                  <p>{meal.optionalVariation}</p>
+                {/if}
+              </article>
+            {/each}
+          </div>
+          <SafeAdventurePromo />
+        {:else}
+          <div class="empty-state">{generationResult.message}</div>
+        {/if}
+      </section>
+    {/if}
   </main>
 </section>

@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Terms of Use',
+    description: 'Terms of use and advice disclaimer for FussyFix.',
+    path: '/terms'
+  });
 </script>
 
 <svelte:head>
-  <title>Terms of Use | FussyFix</title>
-  <meta name="description" content="Terms of use and advice disclaimer for FussyFix." />
-  <link rel="canonical" href="https://fussyfix.co.uk/terms" />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">

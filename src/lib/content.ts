@@ -29,7 +29,7 @@ export const generatorCopy = {
   eyebrow: 'Free meal ideas for fussy eaters',
   title: 'Turn the foods they already trust into five fresh meal ideas.',
   description:
-    'FussyFix helps parents start from safe foods, not battles. Add the foods your child already feels okay with, pick their age group, and get five warm, practical meal ideas with a positive nutrition win built in.',
+    'FussyFix helps parents start from safe foods, not battles. Add the foods your child already feels okay with, pick their age group, and get five warm, practical meal ideas, each with one small nutrition idea woven in.',
   points: [
     'Safe-food first suggestions',
     'Age-aware meal ideas',
@@ -80,7 +80,7 @@ export const editorialPages = [
       'Dairy',
       'Milk, mild cheese, and yoghurt are accepted by many fussy eaters, which helps with calcium intake even when vegetable eating is limited.',
       'Using safe foods as a starting point',
-      'FussyFix takes the foods your child already accepts and uses them to generate practical meal ideas that stay within the safe zone while introducing small nutritional wins. Enter your child\'s safe foods and see what comes back.'
+      'FussyFix takes the foods your child already accepts and uses them to generate practical meal ideas that stay within the safe zone while weaving in small nutrition ideas. Enter your child\'s safe foods and see what comes back.'
     ]
   },
   {
@@ -140,8 +140,8 @@ export const editorialPages = [
       'Grated mild cheddar or cream cheese adds calcium, fat, and protein to a wide range of accepted foods — pasta, toast, scrambled eggs, baked potato. It is one of the most nutritionally efficient additions for fussy eaters because it is so widely accepted.',
       'Fruit alongside, not instead of',
       'Rather than trying to get vegetables into meals where they are not welcome, adding fruit alongside accepted foods is a low-conflict way to improve nutritional intake. A handful of strawberries or sliced banana beside pasta is not a strange combination to a young child — and it contributes meaningfully to their intake.',
-      'The hidden nutrition win',
-      'FussyFix includes a hidden nutrition win with every meal idea — a simple note on what the meal contributes nutritionally, framed positively. It is not about tricking children. It is about helping parents feel confident that accepted meals are doing more than they might think.'
+      'Small nutrition ideas',
+      'FussyFix includes a small nutrition idea with every meal idea — a simple note on what the meal contributes, framed positively. It is not about tricking children. It is about helping parents understand what accepted meals may already offer.'
     ]
   }
 ] as const;

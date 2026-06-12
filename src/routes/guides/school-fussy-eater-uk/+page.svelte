@@ -1,17 +1,23 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
+  import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
   const title = 'School and Nursery — Making the System Work for a Fussy Eater';
   const description = 'UK school and nursery guidance for fussy eating and ARFID: lunches, adjustments, SEND and a template letter.';
   const path = '/guides/school-fussy-eater-uk';
+  const meta = pageMeta({ title, description, path });
   const schema = articleSchema({ title, description, path });
 </script>
 
 <svelte:head>
-  <title>{title} | FussyFix</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={`https://fussyfix.co.uk${path}`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 <SchemaScript {schema} />
 

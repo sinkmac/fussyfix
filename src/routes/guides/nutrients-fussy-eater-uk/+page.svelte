@@ -1,5 +1,6 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
+  import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
   const title = 'Getting Nutrients Into a Fussy Eater — UK Practical Guide';
@@ -9,13 +10,18 @@
     { question: 'Is this medical nutrition advice?', answer: 'No. It is general information and harm reduction. Ask your GP for referral to a paediatric dietitian if you are worried.' },
     { question: 'Should I use supplements?', answer: 'Ask a pharmacist, GP or dietitian, especially for young children or children with restricted eating.' }
   ];
+  const meta = pageMeta({ title, description, path });
   const schema = [articleSchema({ title, description, path }), faqSchema(faqs)];
 </script>
 
 <svelte:head>
-  <title>{title} | FussyFix</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={`https://fussyfix.co.uk${path}`} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 <SchemaScript {schema} />
 

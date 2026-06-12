@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Cookie Policy',
+    description: 'Cookie policy for FussyFix, including consent and rejection of non-essential cookies.',
+    path: '/cookies'
+  });
 </script>
 
 <svelte:head>
-  <title>Cookie Policy | FussyFix</title>
-  <meta name="description" content="Cookie policy for FussyFix, including consent and rejection of non-essential cookies." />
-  <link rel="canonical" href="https://fussyfix.co.uk/cookies" />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">

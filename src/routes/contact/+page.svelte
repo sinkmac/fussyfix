@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { pageMeta } from '$lib/pageMeta';
+
+  const meta = pageMeta({
+    title: 'Contact',
+    description: 'Contact FussyFix with questions about the site.',
+    path: '/contact'
+  });
 </script>
 
 <svelte:head>
-  <title>Contact | FussyFix</title>
-  <meta name="description" content="Contact FussyFix with questions about the site." />
-  <link rel="canonical" href="https://fussyfix.co.uk/contact" />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
+  <link rel="canonical" href={meta.canonical} />
+  <meta property="og:title" content={meta.ogTitle} />
+  <meta property="og:description" content={meta.ogDescription} />
+  <meta property="og:url" content={meta.ogUrl} />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <section class="article-shell">
