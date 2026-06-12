@@ -20,6 +20,9 @@ for (const ageBand of ageBands) {
 }
 
 cases.push({ name: 'all-beige-stays-beige', ageBand: '3–5 years', input: 'toast, plain pasta, crackers', expect: 'ok', forbidden: /broccoli|spinach|kale|rainbow|vegetable/i });
+cases.push({ name: 'small-list-one-side-note', ageBand: '3–5 years', input: 'toast', expect: 'ok', expectSideNote: true });
+cases.push({ name: 'small-list-two-side-note', ageBand: '3–5 years', input: 'toast, plain pasta', expect: 'ok', expectSideNote: true });
+cases.push({ name: 'small-list-three-no-side-note', ageBand: '3–5 years', input: 'toast, plain pasta, crackers', expect: 'ok', expectSideNote: false });
 cases.push({ name: 'entered-allergen-not-expanded', ageBand: '6–8 years', input: 'egg', expect: 'ok', forbidden: /peanut|sesame|shellfish|prawn|cashew|almond/i });
 cases.push({ name: 'pressure-frame-screened', ageBand: '3–5 years', input: 'make him eat vegetables', expect: 'screened' });
 cases.push({ name: 'acute-refusal-screened', ageBand: '3–5 years', input: "she's barely eaten in three days", expect: 'screened' });
@@ -56,6 +59,8 @@ for (const testCase of cases) {
   if (result.status === 'ok') {
     rendered = result.ideas.map((idea) => `${idea.title} ${idea.body} ${idea.optionalVariation ?? ''}`).join('\n');
     if (testCase.forbidden?.test(rendered)) pass = false;
+    if (testCase.expectSideNote === true && !result.sideNote) pass = false;
+    if (testCase.expectSideNote === false && result.sideNote) pass = false;
     for (const idea of result.ideas) {
       const issues = validateIdea(idea, testCase.input.split(/[,\n]/).map((food) => food.trim()).filter(Boolean), testCase.ageBand);
       if (issues.length > 0) pass = false;

@@ -45,8 +45,8 @@ These are product-law constraints from the approved FussyFix philosophy rather t
 - Acute concern language in the input must route away from generation to fixed GP/NHS 111/BEAT signposting.
 - If screening errors, it must fail closed to the fixed signpost response.
 
-## Sink sign-off needed
+## Sink sign-off record
 
-- Final approval of the exact constraint list and whether the 1–2 honey rule should remain conservative.
-- Small-list threshold for the side-note behaviour. Engineering default is currently 1 safe food.
-- Final copy approval for the fixed urgent signpost and the small-list side-note.
+- Final approval of the exact constraint list and whether the 1–2 honey rule should remain conservative. Approved by Sink on 12 June 2026: keep the current sourced constraint list and conservative 1–2 honey handling.
+- Small-list threshold for the side-note behaviour. Approved by Sink on 12 June 2026: show the side-note for 1 or 2 safe foods; suppress it for 3+ safe foods.
+- Final copy approval for the fixed urgent signpost and the small-list side-note. Approved by Sink on 12 June 2026 with the implemented wording in `src/lib/generatorSafety.ts`.

@@ -19,10 +19,10 @@ export type GenerationResult =
 export const ageBands: AgeBand[] = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
 
 export const emergencyResponse =
-  "I'm sorry things feel this worrying. This meal ideas tool is not the right next step for urgent eating concerns. Please contact your GP, call NHS 111 if you're worried it may be urgent, or use BEAT's helplines for eating-difficulty support. If your child seems very unwell, seek urgent medical help.";
+  "I’m sorry things feel this worrying. This meal ideas tool is not the right next step when eating, drinking, weight, vomiting, dehydration, or distress feels urgent. Please contact your GP, call NHS 111 if you’re worried it may be urgent, or use BEAT’s helplines for eating-difficulty support. If your child seems very unwell, seek urgent medical help.";
 
 export const smallListSideNote =
-  'When the safe-food list is very short, it can help to keep notes on what is accepted, what is refused, hydration, energy and distress so a GP conversation is easier if you decide to seek support.';
+  'Because this is a very short safe-food list, it may help to keep a simple note of what is accepted, what is refused, drinking, energy, and distress. That can make a GP conversation easier if you decide to seek support.';
 
 export const genericErrorMessage = "Sorry — FussyFix couldn't generate safe ideas this time. Please try again later.";
 
@@ -242,7 +242,7 @@ export function buildFallbackIdeas(safeFoods: string[], ageBand: AgeBand): MealI
 export function generateIdeas({
   input,
   ageBand,
-  smallListThreshold = 1
+  smallListThreshold = 2
 }: {
   input: string;
   ageBand: AgeBand;

@@ -87,12 +87,19 @@ describe('generator safety guardrails', () => {
     }
   });
 
-  it('adds the small-list side note alongside results, not instead of them', () => {
-    const result = generateIdeas({ input: 'toast', ageBand: '3–5 years', smallListThreshold: 1 });
-    assert.equal(result.status, 'ok');
-    if (result.status !== 'ok') return;
-    assert.equal(result.ideas.length, 5);
-    assert.ok(result.sideNote);
-    assert.doesNotMatch(result.sideNote, /ARFID|diagnos/i);
+  it('adds the small-list side note alongside results for one or two safe foods, not instead of them', () => {
+    for (const input of ['toast', 'toast, pasta']) {
+      const result = generateIdeas({ input, ageBand: '3–5 years' });
+      assert.equal(result.status, 'ok');
+      if (result.status !== 'ok') return;
+      assert.equal(result.ideas.length, 5);
+      assert.ok(result.sideNote);
+      assert.doesNotMatch(result.sideNote, /ARFID|diagnos/i);
+    }
+
+    const threeFoodResult = generateIdeas({ input: 'toast, pasta, crackers', ageBand: '3–5 years' });
+    assert.equal(threeFoodResult.status, 'ok');
+    if (threeFoodResult.status !== 'ok') return;
+    assert.equal(threeFoodResult.sideNote, undefined);
   });
 });
