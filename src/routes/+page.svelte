@@ -1,6 +1,5 @@
 <script lang="ts">
   import SchemaScript from '$lib/SchemaScript.svelte';
-  import SafeAdventurePromo from '$lib/SafeAdventurePromo.svelte';
   import { generatorCopy, siteMeta } from '$lib/content';
   import { generateIdeas, type AgeBand, type GenerationResult } from '$lib/generatorSafety';
   import { pageMeta } from '$lib/pageMeta';
@@ -130,7 +129,6 @@
               </article>
             {/each}
           </div>
-          <SafeAdventurePromo />
         {:else}
           <div class="empty-state">{generationResult.message}</div>
         {/if}
