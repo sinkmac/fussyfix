@@ -1,51 +1,14 @@
 <script lang="ts">
-  import SchemaScript from '$lib/SchemaScript.svelte';
-  import { generatorCopy, siteMeta } from '$lib/content';
-  import { generateIdeas, type AgeBand, type GenerationResult } from '$lib/generatorSafety';
   import { pageMeta } from '$lib/pageMeta';
+  import { vegetables } from '$lib/data';
 
   const meta = pageMeta({
-    title: siteMeta.title,
-    description: siteMeta.description,
+    title: 'FussyFix — vegetable redemption starts here',
+    description: 'It was never the vegetable, it was the method. Find out how to cook the vegetables you thought you hated.',
     path: '/'
   });
 
-  const ageOptions: AgeBand[] = ['1–2 years', '3–5 years', '6–8 years', '9–12 years'];
-
-  let safeFoods = $state('');
-  let ageGroup = $state<AgeBand>('3–5 years');
-  let generationResult = $state<GenerationResult | null>(null);
-
-  function handleGenerate() {
-    generationResult = generateIdeas({ input: safeFoods, ageBand: ageGroup });
-  }
-
-  const homepageSchema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        name: 'FussyFix',
-        url: siteMeta.url,
-        description: siteMeta.description
-      },
-      {
-        '@type': 'WebApplication',
-        name: 'FussyFix meal idea generator',
-        url: siteMeta.url,
-        description: siteMeta.description,
-        applicationCategory: 'LifestyleApplication',
-        operatingSystem: 'Web',
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' }
-      },
-      {
-        '@type': 'Organization',
-        name: 'AI Scotland Productions',
-        url: 'https://aiscotlandproductions.com'
-      }
-    ]
-  };
-
+  const featured = vegetables.vegetables.slice(0, 4);
 </script>
 
 <svelte:head>
@@ -58,81 +21,61 @@
   <meta property="og:type" content="website" />
 </svelte:head>
 
-<SchemaScript schema={homepageSchema} />
-
 <section class="page-shell">
-  <main class="page-grid">
-    <section class="hero-card">
-      <div class="eyebrow">{generatorCopy.eyebrow}</div>
-      <h1>{generatorCopy.title}</h1>
-      <p class="lede">{generatorCopy.description}</p>
-      <ul class="hero-points">
-        {#each generatorCopy.points as point}
-          <li>{point}</li>
-        {/each}
-      </ul>
-      <section class="method-block" aria-labelledby="method-heading">
-        <h2 id="method-heading">Safe-food first, not pressure first.</h2>
-        <p>
-          FussyFix starts with foods your child already accepts and builds meal ideas inside that safe-food zone.
-          It is not medical advice, not an ARFID diagnosis, and not treatment. If eating feels unsafe, growth is affected,
-          or mealtimes are causing serious distress, speak to a GP, dietitian, or qualified clinician.
-        </p>
-      </section>
-    </section>
+  <div class="card" style="margin-bottom: 1.5rem; text-align: center; padding: 3rem 2rem;">
+    <div class="eyebrow">Redemption starts here</div>
+    <h1 style="font-size: 2.2rem; margin: 0.5rem 0; color: var(--brand-dark);">
+      It was never the vegetable.<br>It was the method.
+    </h1>
+    <p class="lede" style="margin: 1rem auto;">
+      You don't hate broccoli. You've had broccoli boiled to grey-green collapse, stalk and florets reduced to uniform mush in unsalted water.
+    </p>
+    <p class="lede" style="margin: 1rem auto;">
+      Every vegetable has a redemption story. We match yours.
+    </p>
+    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="/redeem" class="primary-button">Find your redemption method</a>
+      <a href="/chart" class="secondary-button">This week's chart</a>
+    </div>
+  </div>
 
-    <section class="form-card">
-      <form class="generator-form" onsubmit={(event) => { event.preventDefault(); handleGenerate(); }}>
-        <label class="field">
-          <span class="field-label">Safe foods</span>
-          <textarea
-            bind:value={safeFoods}
-            rows="6"
-          ></textarea>
-          <span class="field-help">Separate foods with commas or new lines.</span>
-        </label>
+  <div style="margin-bottom: 1rem;">
+    <div class="eyebrow">Featured vegetables</div>
+  </div>
+  <div class="veg-grid">
+    {#each featured as veg}
+      <a href="/redeem/{veg.id}" class="veg-card">
+        <h3>{veg.name}</h3>
+        <p class="failure-preview">{veg.childhoodFailureMode}</p>
+        <div style="margin-top: 0.5rem;">
+          <span class="badge badge--new" style="font-size: 0.7rem;">{veg.redemptionMethods.length} methods</span>
+        </div>
+      </a>
+    {/each}
+  </div>
+  <div style="margin-top: 1rem; text-align: center;">
+    <a href="/redeem" class="secondary-button">See all {vegetables.vegetables.length} vegetables →</a>
+  </div>
 
-        <label class="field">
-          <span class="field-label">Age group</span>
-          <select bind:value={ageGroup}>
-            {#each ageOptions as option}
-              <option value={option}>{option}</option>
-            {/each}
-          </select>
-        </label>
-
-        <button class="primary-button" type="submit">Generate 5 meal ideas</button>
-        <div class="empty-state">{generatorCopy.resultsEmpty}</div>
-      </form>
-    </section>
-
-    {#if generationResult}
-      <section class="results-card" aria-live="polite">
-        {#if generationResult.status === 'ok'}
-          <div class="results-header">
-            <div>
-              <div class="eyebrow eyebrow--soft">Your results</div>
-              <h2>{generatorCopy.resultsTitle}</h2>
-            </div>
-          </div>
-          {#if generationResult.sideNote}
-            <div class="disclaimer-box">{generationResult.sideNote}</div>
-          {/if}
-          <div class="results-list">
-            {#each generationResult.ideas as meal}
-              <article class="result-item">
-                <h3>{meal.title}</h3>
-                <p>{meal.body}</p>
-                {#if meal.optionalVariation}
-                  <p>{meal.optionalVariation}</p>
-                {/if}
-              </article>
-            {/each}
-          </div>
-        {:else}
-          <div class="empty-state">{generationResult.message}</div>
-        {/if}
-      </section>
-    {/if}
-  </main>
+  <div style="margin-top: 2rem;" class="card">
+    <h2>How it works</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+      <div>
+        <div class="eyebrow">1. Remember</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Think of a vegetable you thought you hated. The one that arrived boiled, grey, and sad.</p>
+      </div>
+      <div>
+        <div class="eyebrow">2. Redeem</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Look it up. Find out why it failed — and which method turns it around.</p>
+      </div>
+      <div>
+        <div class="eyebrow">3. Cook</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Follow the timing. Char it, roast it, blister it. Any appliance, any kitchen.</p>
+      </div>
+      <div>
+        <div class="eyebrow">4. Revisit</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Come back each week. The chart tells you which vegetables are having their moment.</p>
+      </div>
+    </div>
+  </div>
 </section>

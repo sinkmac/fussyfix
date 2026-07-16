@@ -1,0 +1,28 @@
+[
+  {
+    "week": "2026-W28",
+    "published": "2026-07-14",
+    "entries": [
+      { "position": 1, "vegetableId": "broccoli", "lastWeek": null, "weeksOnChart": 1, "peak": 1, "badge": "new" },
+      { "position": 2, "vegetableId": "potato", "lastWeek": null, "weeksOnChart": 1, "peak": 2, "badge": "new" },
+      { "position": 3, "vegetableId": "cauliflower", "lastWeek": null, "weeksOnChart": 1, "peak": 3, "badge": "new" },
+      { "position": 4, "vegetableId": "carrot", "lastWeek": null, "weeksOnChart": 1, "peak": 4, "badge": "new" },
+      { "position": 5, "vegetableId": "sweet-potato", "lastWeek": null, "weeksOnChart": 1, "peak": 5, "badge": "new" },
+      { "position": 6, "vegetableId": "aubergine", "lastWeek": null, "weeksOnChart": 1, "peak": 6, "badge": "new" },
+      { "position": 7, "vegetableId": "courgette", "lastWeek": null, "weeksOnChart": 1, "peak": 7, "badge": "new" },
+      { "position": 8, "vegetableId": "bell-pepper", "lastWeek": null, "weeksOnChart": 1, "peak": 8, "badge": "new" },
+      { "position": 9, "vegetableId": "tomato", "lastWeek": null, "weeksOnChart": 1, "peak": 9, "badge": "new" },
+      { "position": 10, "vegetableId": "parsnip", "lastWeek": null, "weeksOnChart": 1, "peak": 10, "badge": "new" },
+      { "position": 11, "vegetableId": "kale", "lastWeek": null, "weeksOnChart": 1, "peak": 11, "badge": "new" },
+      { "position": 12, "vegetableId": "spinach", "lastWeek": null, "weeksOnChart": 1, "peak": 12, "badge": "new" },
+      { "position": 13, "vegetableId": "runner-beans", "lastWeek": null, "weeksOnChart": 1, "peak": 13, "badge": "new" },
+      { "position": 14, "vegetableId": "broad-beans", "lastWeek": null, "weeksOnChart": 1, "peak": 14, "badge": "new" },
+      { "position": 15, "vegetableId": "leek", "lastWeek": null, "weeksOnChart": 1, "peak": 15, "badge": "new" },
+      { "position": 16, "vegetableId": "brussels-sprouts", "lastWeek": null, "weeksOnChart": 1, "peak": 16, "badge": "new" },
+      { "position": 17, "vegetableId": "sweetcorn", "lastWeek": null, "weeksOnChart": 1, "peak": 17, "badge": "new" },
+      { "position": 18, "vegetableId": "peas", "lastWeek": null, "weeksOnChart": 1, "peak": 18, "badge": "new" },
+      { "position": 19, "vegetableId": "swede", "lastWeek": null, "weeksOnChart": 1, "peak": 19, "badge": "new" },
+      { "position": 20, "vegetableId": "cucumber", "lastWeek": null, "weeksOnChart": 1, "peak": 20, "badge": "new" }
+    ]
+  }
+]

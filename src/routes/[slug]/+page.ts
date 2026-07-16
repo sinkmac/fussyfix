@@ -1,16 +1,11 @@
-import { editorialPages } from '$lib/content';
 import { error } from '@sveltejs/kit';
 
+// This route was part of the old ARFID/fussy-eating content.
+// The content has been removed. All slugs return 404.
 export function entries() {
-  return editorialPages.map((page) => ({ slug: page.slug }));
+  return [];
 }
 
-export function load({ params }) {
-  const page = editorialPages.find((entry) => entry.slug === params.slug);
-
-  if (!page) {
-    throw error(404, 'Page not found');
-  }
-
-  return { page };
+export function load() {
+  throw error(404, 'Page not found');
 }

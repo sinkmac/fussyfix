@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "version": "0.1.1",
+    "pass": "scoping — ruling response",
+    "date": "2026-07-14",
+    "ruling": "Steaming exclusion OVERTURNED. Eighth method 'gentle-heat' admitted. The enemy was never water, it was duration. R4 outranks taxonomic elegance — if a reader's redemption is steaming, the taxonomy must serve it.",
+    "reasoning": {
+      "working_set": "Eight methods selected. Each represents a thermodynamic or chemical category shift from the childhood failure mode (boiling). The redemption thesis is 'it was never the vegetable, it was the method' — so redemption methods must be transformations, not corrections of the same technique.",
+      "included": [
+        "gentle-heat — steam or quick-blanch replacing long-boil submersion. Bright-tender result, no waterlogging. The enemy was never water, it was duration. Added per author ruling 14 Jul 2026.",
+        "char — fire replaces water; radiant/flame heat produces blackened exterior and smoky depth. Category shift: wet→dry, moderate→extreme heat.",
+        "roast — ambient convective dry heat replaces submersion; caramelisation replaces waterlogging. Category shift: wet→dry, boiled→caramelised.",
+        "blister — intense pan heat with oil replaces pot of water; concentrated exterior, retained bite. Category shift: wet→dry, passive→active.",
+        "crisp — thin-cut dehydration replaces chunk-boiling; shatter texture replaces collapse. Category shift: wet→dry, soft→brittle.",
+        "pickle — acid/salt chemistry replaces heat entirely; tang and preserved crunch. Category shift: cooked→raw, heat→chemistry.",
+        "raw-thin — precision cutting replaces any cooking; reveals what boiling hid. Category shift: cooked→raw, soft→fresh.",
+        "slow-braise — low wet heat as intention, not accident; collapse as silk, not sludge. Category shift: rushed→patient, waterlogged→concentrated."
+      ],
+      "excluded": [
+        "boil — the antagonist. Not a redemption method.",
+        "microwave — a reheating technology, not a culinary method with a distinct sensory outcome.",
+        "pressure-cook — a speed variant of wet heat; does not produce a sensory outcome distinct from slow-braise for vegetables at launch scope.",
+        "confit — valid method but too niche for a vegetable-first launch taxonomy. Candidate for future 'fat' category expansion.",
+        "ferment — distinct from pickle in duration and microbial profile. Pickle covers quick-pickle and short lacto-ferment for launch; full fermentation reserved for future 'fermented' category."
+      ]
+    }
+  },
+  "methods": [
+    {
+      "id": "gentle-heat",
+      "name": "Gentle-Heat",
+      "description": "Steam or quick-blanch replacing long-boil submersion. Bright-tender result, no waterlogging, colour preserved. The enemy was never water, it was duration.",
+      "deliveryRoutes": ["steamer", "pan-blanch", "microwave-steam"],
+      "sensoryOutcome": "bright-tender"
+    },
+    {
+      "id": "char",
+      "name": "Char",
+      "description": "Direct radiant or flame heat producing blackened, blistered exterior with smoky depth and tender interior. High heat, short duration.",
+      "deliveryRoutes": ["grill", "open-flame", "cast-iron-pan", "air-fryer"],
+      "sensoryOutcome": "charred"
+    },
+    {
+      "id": "roast",
+      "name": "Roast",
+      "description": "Ambient convective dry heat producing caramelised, golden exterior and tender, concentrated interior. Medium-high heat, medium duration.",
+      "deliveryRoutes": ["oven", "air-fryer"],
+      "sensoryOutcome": "tender"
+    },
+    {
+      "id": "blister",
+      "name": "Blister",
+      "description": "High pan heat with oil producing blistered, concentrated exterior while preserving interior bite and brightness. High heat, short duration.",
+      "deliveryRoutes": ["pan", "wok", "air-fryer"],
+      "sensoryOutcome": "crunchy"
+    },
+    {
+      "id": "crisp",
+      "name": "Crisp",
+      "description": "Thin-cut, high-heat dehydration producing golden, shatter-crisp texture throughout. Medium-high heat, variable duration depending on thickness.",
+      "deliveryRoutes": ["oven", "air-fryer", "pan"],
+      "sensoryOutcome": "crunchy"
+    },
+    {
+      "id": "pickle",
+      "name": "Pickle",
+      "description": "Acid, salt, or short ferment cure transforming texture and flavour without heat. Cold process, long duration. Tang, preserved crunch, brightness.",
+      "deliveryRoutes": ["jar"],
+      "sensoryOutcome": "fresh"
+    },
+    {
+      "id": "raw-thin",
+      "name": "Raw-Thin",
+      "description": "Mandolined or finely sliced raw preparation preserving full crunch, freshness, and cellular integrity. No heat. The vegetable as itself, revealed.",
+      "deliveryRoutes": ["mandoline", "knife"],
+      "sensoryOutcome": "fresh"
+    },
+    {
+      "id": "slow-braise",
+      "name": "Slow-Braise",
+      "description": "Low wet heat over long duration producing silky, collapse-tender texture with concentrated, sweet depth. Collapse as intention, not accident.",
+      "deliveryRoutes": ["oven", "pan", "slow-cooker"],
+      "sensoryOutcome": "silky"
+    }
+  ],
+  "_singleRouteMethods": [
+    {
+      "methodId": "pickle",
+      "reasoning": "Pickling is jar-bound by definition. Quick-pickle and lacto-ferment are both jar processes — the vessel is the method. No appliance route exists."
+    },
+    {
+      "methodId": "raw-thin",
+      "reasoning": "Raw-thin uses a mandoline or knife — these are tools, not routes. The method is 'raw preparation' and has no appliance variant. No heat, no appliance."
+    }
+  ]
+}

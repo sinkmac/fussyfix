@@ -12,28 +12,26 @@
 <header class="site-header">
   <a href="/" class="brand">FussyFix</a>
   <nav>
-    <a href="/guides/fussy-eating-or-arfid">Fussy eating or ARFID</a>
-    <a href="/guides/beige-food-phase">Beige food phase</a>
-    <a href="/guides/safe-foods-fussy-eaters">Safe foods</a>
+    <a href="/redeem">Redeem a vegetable</a>
+    <a href="/chart">Weekly chart</a>
     <a href="/about">About</a>
-    <a href="/medical-disclaimer">Medical disclaimer</a>
   </nav>
 </header>
 
 {@render children()}
 
 <footer class="site-footer">
-  <p>FussyFix</p>
+  <p>FussyFix — it was never the vegetable, it was the method.</p>
   <nav>
     <a href="/">Home</a>
+    <a href="/redeem">Redeem a vegetable</a>
+    <a href="/chart">Weekly chart</a>
     <a href="/about">About</a>
     <a href="/about/editorial-standards">Editorial standards</a>
-    <a href="/medical-disclaimer">Medical disclaimer</a>
     <a href="/privacy">Privacy</a>
     <a href="/cookies">Cookies</a>
     <a href="/terms">Terms</a>
     <a href="/contact">Contact</a>
-    <a href="/affiliate-disclosure">Affiliate disclosure</a>
   </nav>
 </footer>
 

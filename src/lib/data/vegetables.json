@@ -1,0 +1,1150 @@
+{
+  "_meta": {
+    "version": "0.1.0",
+    "pass": "scoping",
+    "date": "2026-07-14",
+    "category": "veg",
+    "note": "Category field is hard-coded to 'veg' for Season One. Schema must not preclude future categories (fish, textures, fermented)."
+  },
+  "vegetables": [
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "childhoodFailureMode": "Boiled to grey-green collapse, stalk and florets reduced to uniform mush in unsalted water.",
+      "redemptionMethods": [
+        "gentle-heat",
+        "char",
+        "roast",
+        "blister"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "4–5 min",
+            "prepNote": "florets"
+          },
+          "pan-blanch": {
+            "cookTime": "3–4 min",
+            "prepNote": "in boiling salted water, then ice bath"
+          },
+          "microwave-steam": {
+            "cookTime": "3–4 min",
+            "prepNote": "covered, with 2 tbsp water"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "8–10 min",
+            "prepNote": "turning once"
+          },
+          "open-flame": {
+            "cookTime": "6–8 min",
+            "prepNote": "rotating"
+          },
+          "cast-iron-pan": {
+            "cookTime": "10–12 min",
+            "prepNote": "cut-side down"
+          },
+          "air-fryer": {
+            "cookTime": "8–10 min",
+            "prepNote": "@200°C"
+          }
+        },
+        "roast": {
+          "oven": {
+            "cookTime": "20–25 min",
+            "prepNote": "@200°C"
+          },
+          "air-fryer": {
+            "cookTime": "12–15 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "5–7 min",
+            "prepNote": "high heat, oiled"
+          },
+          "wok": {
+            "cookTime": "4–6 min",
+            "prepNote": "high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "6–8 min",
+            "prepNote": "@200°C"
+          }
+        }
+      },
+      "textureProfile": "Crisp-tender florets, firm stalk when cut on bias",
+      "ukSeasonality": "Jun–Oct (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "cauliflower",
+      "name": "Cauliflower",
+      "childhoodFailureMode": "Boiled to watery disintegration, white florets collapsing into milky nothing, drained and served unseasoned.",
+      "redemptionMethods": [
+        "roast",
+        "gentle-heat",
+        "char",
+        "pickle"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "30–35 min @200°C",
+            "prepNote": "whole or in thick steaks"
+          },
+          "air-fryer": {
+            "cookTime": "18–22 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "5–7 min",
+            "prepNote": "florets"
+          },
+          "pan-blanch": {
+            "cookTime": "4–6 min",
+            "prepNote": ""
+          },
+          "microwave-steam": {
+            "cookTime": "5–6 min",
+            "prepNote": ""
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "10–12 min",
+            "prepNote": "thick slices"
+          },
+          "cast-iron-pan": {
+            "cookTime": "12–15 min",
+            "prepNote": "steak-cut"
+          },
+          "air-fryer": {
+            "cookTime": "10–12 min",
+            "prepNote": "@200°C"
+          }
+        },
+        "pickle": {
+          "jar": {
+            "cookTime": null,
+            "prepNote": "Quick-pickle: 30 min minimum; lacto-ferment: 5–7 days"
+          }
+        }
+      },
+      "textureProfile": "Caramelised exterior, buttery interior when roasted; tangy-crunch when pickled",
+      "ukSeasonality": "Jun–Nov (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "childhoodFailureMode": "Boiled to sweet orange mush, cut into coins or batons, cooked until fork slides through without resistance.",
+      "redemptionMethods": [
+        "roast",
+        "char",
+        "pickle"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "30–40 min @200°C",
+            "prepNote": "whole or halved lengthways"
+          },
+          "air-fryer": {
+            "cookTime": "18–25 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "10–12 min",
+            "prepNote": "whole, turning"
+          },
+          "cast-iron-pan": {
+            "cookTime": "12–15 min",
+            "prepNote": "halved lengthways"
+          },
+          "air-fryer": {
+            "cookTime": "10–12 min",
+            "prepNote": "@200°C"
+          }
+        },
+        "pickle": {
+          "jar": {
+            "cookTime": null,
+            "prepNote": "Quick-pickle ribbons: 20 min; jarred batons: 24 hr"
+          }
+        }
+      },
+      "textureProfile": "Caramelised, concentrated sweetness when roasted; snappy-tang when pickled",
+      "ukSeasonality": "Jul–Apr (UK field + stored); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "peas",
+      "name": "Peas",
+      "childhoodFailureMode": "Boiled from frozen to grey-green bullets, served in a puddle of cooking water, spooned onto the plate as an obligation.",
+      "redemptionMethods": [
+        "gentle-heat",
+        "blister"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "2–3 min",
+            "prepNote": "from frozen"
+          },
+          "pan-blanch": {
+            "cookTime": "1–2 min",
+            "prepNote": "from frozen"
+          },
+          "microwave-steam": {
+            "cookTime": "2–3 min",
+            "prepNote": "from frozen"
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "3–4 min",
+            "prepNote": "high heat, oiled, from frozen or fresh"
+          },
+          "wok": {
+            "cookTime": "2–3 min",
+            "prepNote": "high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        }
+      },
+      "textureProfile": "Blistered: pop-bright, concentrated, sweet",
+      "ukSeasonality": "Jun–Aug (UK fresh); frozen available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "potato",
+      "name": "Potato",
+      "childhoodFailureMode": "Boiled to gluey, waterlogged collapse; or mashed to wallpaper paste with margarine and a splash of milk.",
+      "redemptionMethods": [
+        "roast",
+        "crisp",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "45–60 min @200°C",
+            "prepNote": "parboiled and roughed"
+          },
+          "air-fryer": {
+            "cookTime": "25–35 min @190°C",
+            "prepNote": "parboiled and roughed"
+          }
+        },
+        "crisp": {
+          "oven": {
+            "cookTime": "20–25 min @180°C",
+            "prepNote": "thinly sliced"
+          },
+          "air-fryer": {
+            "cookTime": "12–18 min @180°C",
+            "prepNote": "thinly sliced"
+          },
+          "pan": {
+            "cookTime": "15–20 min",
+            "prepNote": "medium heat, thin slices, oiled"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "90–120 min @150°C",
+            "prepNote": "in stock"
+          },
+          "pan": {
+            "cookTime": "60–90 min",
+            "prepNote": "low heat, in stock"
+          },
+          "slow-cooker": {
+            "cookTime": "4–6 hr",
+            "prepNote": "on low"
+          }
+        }
+      },
+      "textureProfile": "Roast: glass-crisp exterior, cloud interior; crisp: shatter; braise: silky-collapse",
+      "ukSeasonality": "Year-round (UK field + stored)",
+      "chartEligible": true
+    },
+    {
+      "id": "sweet-potato",
+      "name": "Sweet Potato",
+      "childhoodFailureMode": "Boiled to wet, fibrous string — the water penetrates but the fibres hold, producing a texture that is somehow both mushy and stringy.",
+      "redemptionMethods": [
+        "roast",
+        "char",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "35–45 min @200°C",
+            "prepNote": "wedges or halves"
+          },
+          "air-fryer": {
+            "cookTime": "20–28 min @190°C",
+            "prepNote": "wedges"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "12–15 min",
+            "prepNote": "thick slices"
+          },
+          "cast-iron-pan": {
+            "cookTime": "15–18 min",
+            "prepNote": "thick slices"
+          },
+          "air-fryer": {
+            "cookTime": "12–15 min @200°C",
+            "prepNote": "thick slices"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "90–120 min @150°C",
+            "prepNote": "in coconut milk or stock"
+          },
+          "pan": {
+            "cookTime": "60–90 min",
+            "prepNote": "low heat"
+          },
+          "slow-cooker": {
+            "cookTime": "4–6 hr",
+            "prepNote": "on low"
+          }
+        }
+      },
+      "textureProfile": "Caramelised exterior, velvety interior when roasted; silky when braised",
+      "ukSeasonality": "Import, year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "parsnip",
+      "name": "Parsnip",
+      "childhoodFailureMode": "Boiled to fibrous, oversweet collapse — the woody core remains while the outer flesh disintegrates into sweet water.",
+      "redemptionMethods": [
+        "roast",
+        "char",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "35–45 min @200°C",
+            "prepNote": "halved or quartered lengthways, core removed if woody"
+          },
+          "air-fryer": {
+            "cookTime": "20–28 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "12–15 min",
+            "prepNote": "halved lengthways"
+          },
+          "cast-iron-pan": {
+            "cookTime": "15–18 min",
+            "prepNote": "halved lengthways"
+          },
+          "air-fryer": {
+            "cookTime": "12–15 min",
+            "prepNote": "@200°C"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "90–120 min @150°C",
+            "prepNote": "in stock"
+          },
+          "pan": {
+            "cookTime": "60–90 min",
+            "prepNote": "low heat"
+          },
+          "slow-cooker": {
+            "cookTime": "4–6 hr",
+            "prepNote": "on low"
+          }
+        }
+      },
+      "textureProfile": "Caramelised, honeyed exterior, tender-cream interior when roasted",
+      "ukSeasonality": "Sep–Mar (UK field, improves after frost); stored into spring",
+      "chartEligible": true
+    },
+    {
+      "id": "swede",
+      "name": "Swede",
+      "childhoodFailureMode": "Boiled to bitter, waterlogged cubes — the dense flesh absorbs water and releases sulphur, producing pale orange cubes that taste of nothing and regret.",
+      "redemptionMethods": [
+        "roast",
+        "crisp",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "40–50 min @200°C",
+            "prepNote": "cubed or wedged"
+          },
+          "air-fryer": {
+            "cookTime": "25–35 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "crisp": {
+          "oven": {
+            "cookTime": "20–25 min @180°C",
+            "prepNote": "thinly sliced"
+          },
+          "air-fryer": {
+            "cookTime": "15–20 min @180°C",
+            "prepNote": "thinly sliced"
+          },
+          "pan": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "2–3 hr @150°C",
+            "prepNote": "in stock with aromatics"
+          },
+          "pan": {
+            "cookTime": "90–120 min",
+            "prepNote": "low heat"
+          },
+          "slow-cooker": {
+            "cookTime": "5–7 hr",
+            "prepNote": "on low"
+          }
+        }
+      },
+      "textureProfile": "Roast: sweet, nutty, tender; braise: silky, mellow, concentrated",
+      "ukSeasonality": "Oct–Mar (UK field + stored)",
+      "chartEligible": true
+    },
+    {
+      "id": "cabbage",
+      "name": "Cabbage",
+      "childhoodFailureMode": "Boiled to sulphuric, translucent slime — the kitchen fills with the smell, the leaves collapse into ribbons of pale green nothing, and the cooking water is poured down the sink like evidence disposal.",
+      "redemptionMethods": [
+        "char",
+        "blister",
+        "gentle-heat",
+        "pickle"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "char": {
+          "grill": {
+            "cookTime": "8–10 min",
+            "prepNote": "cut into wedges, oiled"
+          },
+          "cast-iron-pan": {
+            "cookTime": "10–12 min",
+            "prepNote": "wedge-cut, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "8–10 min @200°C",
+            "prepNote": "wedges"
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "5–7 min",
+            "prepNote": "shredded, high heat, oiled"
+          },
+          "wok": {
+            "cookTime": "3–5 min",
+            "prepNote": "shredded, high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "6–8 min @200°C",
+            "prepNote": "shredded"
+          }
+        },
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "3–5 min",
+            "prepNote": "shredded"
+          },
+          "pan-blanch": {
+            "cookTime": "2–3 min",
+            "prepNote": "shredded"
+          },
+          "microwave-steam": {
+            "cookTime": "3–4 min",
+            "prepNote": ""
+          }
+        },
+        "pickle": {
+          "jar": {
+            "cookTime": null,
+            "prepNote": "Quick-pickle shredded: 30 min; sauerkraut-style ferment: 7–14 days"
+          }
+        }
+      },
+      "textureProfile": "Charred: smoky-sweet, tender-crisp; pickled: tangy-crunch, bright",
+      "ukSeasonality": "Year-round (UK field, variety-dependent: spring greens Mar–May, winter cabbage Nov–Mar)",
+      "chartEligible": true
+    },
+    {
+      "id": "kale",
+      "name": "Kale",
+      "childhoodFailureMode": "Boiled to bitter, leathery submission — the leaves darken to near-black, the stalks remain woody, and the whole thing tastes of punishment.",
+      "redemptionMethods": [
+        "crisp",
+        "char",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "crisp": {
+          "oven": {
+            "cookTime": "10–15 min @150°C",
+            "prepNote": "leaves stripped from stalk, oiled and salted"
+          },
+          "air-fryer": {
+            "cookTime": "6–10 min @150°C",
+            "prepNote": "leaves stripped"
+          },
+          "pan": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "5–7 min",
+            "prepNote": "whole leaves, oiled"
+          },
+          "cast-iron-pan": {
+            "cookTime": "5–7 min",
+            "prepNote": "whole leaves, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "5–7 min",
+            "prepNote": "@200°C"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "finely shred and massage with oil and acid"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "finely shred and massage with oil and acid"
+          }
+        }
+      },
+      "textureProfile": "Crisp: shatter-light, savoury; raw-thin: tenderised by massage, fresh-bitter",
+      "ukSeasonality": "Sep–Mar (UK field, improves after frost); curly kale year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "childhoodFailureMode": "Boiled to dark-green sludge, squeezed into a grey ball, served as a wet mound that leaks green water across the plate.",
+      "redemptionMethods": [
+        "blister",
+        "gentle-heat",
+        "raw-thin",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "blister": {
+          "pan": {
+            "cookTime": "1–2 min",
+            "prepNote": "high heat, oiled, wilted not boiled"
+          },
+          "wok": {
+            "cookTime": null,
+            "prepNote": "30–60 sec, high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        },
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "1–2 min",
+            "prepNote": ""
+          },
+          "pan-blanch": {
+            "cookTime": null,
+            "prepNote": "30–60 sec"
+          },
+          "microwave-steam": {
+            "cookTime": "1–2 min",
+            "prepNote": ""
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "dress and serve immediately"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "dress and serve immediately"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "20–30 min @150°C",
+            "prepNote": "in stock or cream"
+          },
+          "pan": {
+            "cookTime": "15–20 min",
+            "prepNote": "low heat, in stock or cream"
+          },
+          "slow-cooker": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        }
+      },
+      "textureProfile": "Blistered: wilted-bright, silky; raw: fresh, peppery, crisp",
+      "ukSeasonality": "Apr–Oct (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "runner-beans",
+      "name": "Runner Beans",
+      "childhoodFailureMode": "Boiled to stringy, squeaky oblivion — the strings were never removed, the pods were cooked whole, and they squeaked against your teeth like rubber.",
+      "redemptionMethods": [
+        "gentle-heat",
+        "blister",
+        "pickle",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "4–5 min",
+            "prepNote": "sliced"
+          },
+          "pan-blanch": {
+            "cookTime": "3–4 min",
+            "prepNote": "sliced"
+          },
+          "microwave-steam": {
+            "cookTime": "4–5 min",
+            "prepNote": ""
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "4–6 min",
+            "prepNote": "high heat, oiled, sliced on diagonal, strings removed"
+          },
+          "wok": {
+            "cookTime": "3–5 min",
+            "prepNote": "high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "6–8 min @200°C",
+            "prepNote": "sliced"
+          }
+        },
+        "pickle": {
+          "jar": {
+            "cookTime": null,
+            "prepNote": "Quick-pickle sliced: 30 min; dilly beans style: 3–5 days"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "slice on diagonal, young pods only, dress and serve"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "slice on diagonal, young pods only, dress and serve"
+          }
+        }
+      },
+      "textureProfile": "Blistered: tender-crisp, bright green; raw-thin: snappy, fresh, grassy",
+      "ukSeasonality": "Jul–Sep (UK field)",
+      "chartEligible": true
+    },
+    {
+      "id": "broad-beans",
+      "name": "Broad Beans",
+      "childhoodFailureMode": "Boiled to grey, leather-jacketed bullets — the outer skin toughens, the inner bean turns mealy and grey, and you were expected to eat the skins.",
+      "redemptionMethods": [
+        "gentle-heat",
+        "blister",
+        "slow-braise",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "3–4 min",
+            "prepNote": "podded"
+          },
+          "pan-blanch": {
+            "cookTime": "2–3 min",
+            "prepNote": "podded"
+          },
+          "microwave-steam": {
+            "cookTime": "3–4 min",
+            "prepNote": ""
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "3–5 min",
+            "prepNote": "high heat, oiled, podded and peeled if mature"
+          },
+          "wok": {
+            "cookTime": "2–4 min",
+            "prepNote": "high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": null,
+            "prepNote": "Timing to be determined"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "30–40 min @150°C",
+            "prepNote": "in stock with aromatics"
+          },
+          "pan": {
+            "cookTime": "25–35 min",
+            "prepNote": "low heat, in stock"
+          },
+          "slow-cooker": {
+            "cookTime": "2–3 hr",
+            "prepNote": "on low"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "pod, peel, dress and serve immediately"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "pod, peel, dress and serve immediately"
+          }
+        }
+      },
+      "textureProfile": "Blistered: pop-tender, bright; raw: sweet, creamy-crunch, fresh",
+      "ukSeasonality": "Jun–Aug (UK field)",
+      "chartEligible": true
+    },
+    {
+      "id": "courgette",
+      "name": "Courgette",
+      "childhoodFailureMode": "Boiled to translucent, watery collapse — the slices turn glassy, release their water into the pan, and arrive on the plate as hot, wet nothing.",
+      "redemptionMethods": [
+        "char",
+        "blister",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "char": {
+          "grill": {
+            "cookTime": "6–8 min",
+            "prepNote": "sliced lengthways, oiled"
+          },
+          "cast-iron-pan": {
+            "cookTime": "6–8 min",
+            "prepNote": "sliced lengthways, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "6–8 min @200°C",
+            "prepNote": "sliced lengthways"
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "4–6 min",
+            "prepNote": "sliced or batons, high heat, oiled"
+          },
+          "wok": {
+            "cookTime": "3–5 min",
+            "prepNote": "high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "5–7 min @200°C",
+            "prepNote": "batons"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "ribbon or shave, dress and serve immediately"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "ribbon or shave, dress and serve immediately"
+          }
+        }
+      },
+      "textureProfile": "Charred: smoky-sweet, tender-firm; raw-thin: fresh, crisp, delicate",
+      "ukSeasonality": "Jun–Oct (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "aubergine",
+      "name": "Aubergine",
+      "childhoodFailureMode": "Fried to blackened oil sponge — sliced thick, dropped into insufficiently hot oil, absorbing every drop until it becomes a greasy, bitter, collapsing slab. Or: never encountered, just intimidating.",
+      "redemptionMethods": [
+        "char",
+        "roast",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "char": {
+          "grill": {
+            "cookTime": "10–15 min",
+            "prepNote": "whole or halved, until skin blackens and flesh collapses"
+          },
+          "open-flame": {
+            "cookTime": "8–12 min",
+            "prepNote": "whole, turning, until skin chars evenly"
+          },
+          "cast-iron-pan": {
+            "cookTime": "12–15 min",
+            "prepNote": "sliced thick, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "12–15 min @200°C",
+            "prepNote": "halved or sliced"
+          }
+        },
+        "roast": {
+          "oven": {
+            "cookTime": "35–45 min @200°C",
+            "prepNote": "halved or cubed, salted and drained first"
+          },
+          "air-fryer": {
+            "cookTime": "20–28 min @190°C",
+            "prepNote": "cubed"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "45–60 min @160°C",
+            "prepNote": "in tomato or stock"
+          },
+          "pan": {
+            "cookTime": "30–45 min",
+            "prepNote": "low heat, in sauce"
+          },
+          "slow-cooker": {
+            "cookTime": "3–4 hr",
+            "prepNote": "on low"
+          }
+        }
+      },
+      "textureProfile": "Charred: smoky, silky-collapse; roasted: creamy, concentrated",
+      "ukSeasonality": "Import year-round; UK glasshouse Jul–Oct",
+      "chartEligible": true
+    },
+    {
+      "id": "bell-pepper",
+      "name": "Bell Pepper",
+      "childhoodFailureMode": "Boiled to flaccid, skin-peeling nothing — or stuffed with wet rice and baked until the pepper collapses into a sad, wrinkled cup of bland.",
+      "redemptionMethods": [
+        "char",
+        "roast",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "char": {
+          "grill": {
+            "cookTime": "10–15 min",
+            "prepNote": "whole, turning, until skin blackens evenly"
+          },
+          "open-flame": {
+            "cookTime": "8–12 min",
+            "prepNote": "whole, turning"
+          },
+          "cast-iron-pan": {
+            "cookTime": "12–15 min",
+            "prepNote": "halved, skin-side down"
+          },
+          "air-fryer": {
+            "cookTime": "10–15 min @200°C",
+            "prepNote": "whole or halved"
+          }
+        },
+        "roast": {
+          "oven": {
+            "cookTime": "25–35 min @200°C",
+            "prepNote": "halved or quartered, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "15–20 min",
+            "prepNote": "@190°C"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "finely slice or dice, dress and serve immediately"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "finely slice or dice, dress and serve immediately"
+          }
+        }
+      },
+      "textureProfile": "Charred: smoky-sweet, silky (skin removed); raw: crisp, bright, juicy",
+      "ukSeasonality": "Import year-round; UK glasshouse Jul–Oct",
+      "chartEligible": true
+    },
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "childhoodFailureMode": "Refrigerated to mealy, flavourless cotton — the cold destroys the flavour compounds, the texture turns grainy, and it sits on the side of the plate as a pink, watery afterthought.",
+      "redemptionMethods": [
+        "roast",
+        "raw-thin",
+        "slow-braise"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "25–35 min @180°C",
+            "prepNote": "halved or whole, slow-roast for concentration"
+          },
+          "air-fryer": {
+            "cookTime": "15–20 min @170°C",
+            "prepNote": "halved"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "slice, serve at room temperature, never refrigerate"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "slice, serve at room temperature, never refrigerate"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "60–90 min @150°C",
+            "prepNote": "in oil or sauce"
+          },
+          "pan": {
+            "cookTime": "45–60 min",
+            "prepNote": "low heat, in sauce"
+          },
+          "slow-cooker": {
+            "cookTime": "4–6 hr",
+            "prepNote": "on low, for sauce"
+          }
+        }
+      },
+      "textureProfile": "Roast: concentrated, jammy, intense; raw: juicy, bright, sweet-acid balance",
+      "ukSeasonality": "Jul–Oct (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "childhoodFailureMode": "Thick-cut to watery boredom, served as a mandatory side-salad obligation — never transformed, never seasoned, just wet slices on a side plate.",
+      "redemptionMethods": [
+        "pickle",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "_r5Note": "Both redemption methods for cucumber are single-route (pickle = jar only; raw-thin = mandoline/knife only). Cucumber does not respond to heat — it releases water and collapses. Per R4, this is a method constraint, not a vegetable failure. Per R5, these cards ship with one route per method because the methods genuinely have one route.",
+      "timings": {
+        "pickle": {
+          "jar": {
+            "cookTime": null,
+            "prepNote": "Quick-pickle ribbons: 15 min; spears: 24 hr; full sour ferment: 5–7 days"
+          }
+        },
+        "raw-thin": {
+          "mandoline": {
+            "cookTime": null,
+            "prepNote": "ribbon or shave, dress with acid and salt, serve immediately"
+          },
+          "knife": {
+            "cookTime": null,
+            "prepNote": "ribbon or shave, dress with acid and salt, serve immediately"
+          }
+        }
+      },
+      "textureProfile": "Pickled: tangy-crunch, bright; raw-thin: delicate-crisp, fresh, cooling",
+      "ukSeasonality": "May–Sep (UK field); import available year-round",
+      "chartEligible": true
+    },
+    {
+      "id": "leek",
+      "name": "Leek",
+      "childhoodFailureMode": "Boiled to slimy green ribbons, served in a white sauce that split — the outer layers turned to gelatinous strips while the core stayed fibrous.",
+      "redemptionMethods": [
+        "char",
+        "slow-braise",
+        "roast"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "char": {
+          "grill": {
+            "cookTime": "8–10 min",
+            "prepNote": "halved lengthways, oiled"
+          },
+          "cast-iron-pan": {
+            "cookTime": "10–12 min",
+            "prepNote": "halved lengthways, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "8–10 min @200°C",
+            "prepNote": "halved lengthways"
+          }
+        },
+        "slow-braise": {
+          "oven": {
+            "cookTime": "45–60 min @160°C",
+            "prepNote": "in stock or cream"
+          },
+          "pan": {
+            "cookTime": "30–45 min",
+            "prepNote": "low heat, in stock or cream"
+          },
+          "slow-cooker": {
+            "cookTime": "3–4 hr",
+            "prepNote": "on low"
+          }
+        },
+        "roast": {
+          "oven": {
+            "cookTime": "25–35 min @200°C",
+            "prepNote": "whole or halved, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "15–20 min",
+            "prepNote": "@190°C"
+          }
+        }
+      },
+      "textureProfile": "Charred: smoky-sweet, tender; braised: silky, mellow, buttery",
+      "ukSeasonality": "Sep–Apr (UK field + stored)",
+      "chartEligible": true
+    },
+    {
+      "id": "brussels-sprouts",
+      "name": "Brussels Sprouts",
+      "childhoodFailureMode": "Boiled to sulphuric grey bombs, cross-cut base and all — the exterior disintegrates, the interior stays hard, and the whole house smells of overcooked brassica for hours.",
+      "redemptionMethods": [
+        "roast",
+        "char",
+        "blister",
+        "gentle-heat"
+      ],
+      "redemptionOneLiner": "TBD — see open question #1",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "25–35 min @200°C",
+            "prepNote": "halved, oiled, cut-side down"
+          },
+          "air-fryer": {
+            "cookTime": "15–20 min @190°C",
+            "prepNote": "halved"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "10–12 min",
+            "prepNote": "halved, oiled"
+          },
+          "cast-iron-pan": {
+            "cookTime": "10–12 min",
+            "prepNote": "halved, cut-side down, high heat"
+          },
+          "air-fryer": {
+            "cookTime": "10–12 min @200°C",
+            "prepNote": "halved"
+          }
+        },
+        "blister": {
+          "pan": {
+            "cookTime": "6–8 min",
+            "prepNote": "halved or shredded, high heat, oiled"
+          },
+          "wok": {
+            "cookTime": "5–7 min",
+            "prepNote": "shredded, high heat, oiled"
+          },
+          "air-fryer": {
+            "cookTime": "8–10 min @200°C",
+            "prepNote": "halved"
+          }
+        },
+        "gentle-heat": {
+          "steamer": {
+            "cookTime": "5–7 min",
+            "prepNote": "halved"
+          },
+          "pan-blanch": {
+            "cookTime": "4–6 min",
+            "prepNote": "halved"
+          },
+          "microwave-steam": {
+            "cookTime": "5–6 min",
+            "prepNote": ""
+          }
+        }
+      },
+      "textureProfile": "Roast: caramelised-crisp exterior, tender interior; charred: smoky-sweet, crisp-edged",
+      "ukSeasonality": "Sep–Mar (UK field, improves after frost)",
+      "chartEligible": true
+    }
+  ],
+  "_singleRouteCards": [
+    {
+      "vegetableId": "cucumber",
+      "methods": [
+        "pickle",
+        "raw-thin"
+      ],
+      "reasoning": "Cucumber's only redemption methods are both single-route (pickle = jar, raw-thin = mandoline/knife). Heat destroys cucumber — it releases water and collapses. Per R4, this is a method constraint, not a vegetable failure. Per R5, these cards ship with one route per method."
+    }
+  ],
+  "_chartEligibilityNote": "All 20 vegetables are chart-eligible. The chart tracks redemption stories, not popularity. A vegetable with constrained methods (cucumber) has a redemption story worth telling: 'it was never meant to be cooked.' Chart eligibility is editorial, not algorithmic."
+}

@@ -3,7 +3,7 @@
 
   const meta = pageMeta({
     title: 'About',
-    description: 'Who is behind FussyFix, why it exists, and what it does and does not do.',
+    description: 'FussyFix is a vegetable-redemption site. It was never the vegetable, it was the method.',
     path: '/about'
   });
 </script>
@@ -18,18 +18,16 @@
   <meta property="og:type" content="website" />
 </svelte:head>
 
-<section class="article-shell">
-  <article class="article-card">
+<section class="page-shell">
+  <div class="card">
     <div class="eyebrow">About</div>
-    <h1>FussyFix is for tired parents who have heard enough surface-level advice.</h1>
+    <h1>It was never the vegetable. It was the method.</h1>
     <div class="article-body">
-      <p>FussyFix is run by Sinclair McLay, based in Kirriemuir, Scotland.</p>
-      <p>It exists because parents of fussy eaters are an underserved audience. Too often they are given advice that sounds neat from the outside and collapses at the table: keep trying, hide vegetables, make one family meal, they will eat when hungry. Many families have already tried the obvious things. They need calmer tools.</p>
-      <p>The Safe Food Library starts from the foods your child already trusts. It helps you think about meals and small next steps without turning dinner into a fight.</p>
-      <p>FussyFix is run by a parent and writer, not a clinician. It is not a diagnosis tool. It is not a substitute for clinical advice, a GP appointment, a health visitor, a paediatric dietitian, an occupational therapist, or an eating disorder service.</p>
-      <p>Every page that discusses ARFID says clearly that the information is not a diagnosis. If you are worried about your child’s eating, speak to your GP.</p>
-      <div class="disclaimer-box"><strong>This is information, not a diagnosis.</strong> If you're concerned about your child's eating, speak to your GP.</div>
-      <p><a class="primary-button" href="/">Build your child's Safe Food Library — it's free.</a></p>
+      <p>FussyFix is a vegetable-redemption publication. It exists because most people who think they hate a vegetable have only ever had it boiled.</p>
+      <p>Boiling is not the only way to cook a vegetable. It is not even a good way. But it is the way most of us first encountered broccoli, cauliflower, cabbage, sprouts, and every other vegetable that arrived on a school dinner plate as a grey-green obligation.</p>
+      <p>FussyFix replaces the childhood failure mode with a method that works. Eight methods — gentle-heat, char, roast, blister, crisp, pickle, raw-thin, slow-braise — each matched to the vegetables that respond to them. Appliance-agnostic. All ages. No guilt, no mocking.</p>
+      <p>FussyFix is run by Sinclair McLay, based in Kirriemuir, Scotland. It is part of the AI Scotland Productions portfolio.</p>
+      <p><a href="/redeem" class="primary-button">Find your redemption method</a></p>
     </div>
-  </article>
+  </div>
 </section>

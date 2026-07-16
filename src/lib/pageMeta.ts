@@ -1,4 +1,3 @@
-import { siteMeta } from './content.ts';
 import { siteUrl } from './editorial.ts';
 
 export type PageMeta = {
@@ -11,10 +10,6 @@ export type PageMeta = {
   ogUrl: string;
 };
 
-export function absoluteUrl(path: string) {
-  return `${siteUrl}${path === '/' ? '' : path}`;
-}
-
 export function pageMeta({
   title,
   description,
@@ -25,7 +20,7 @@ export function pageMeta({
   path: string;
 }): PageMeta {
   const fullTitle = title.includes('FussyFix') ? title : `${title} | FussyFix`;
-  const canonical = absoluteUrl(path);
+  const canonical = `${siteUrl}${path === '/' ? '' : path}`;
 
   return {
     title: fullTitle,
@@ -37,9 +32,3 @@ export function pageMeta({
     ogUrl: canonical
   };
 }
-
-export const fallbackMeta = pageMeta({
-  title: siteMeta.title,
-  description: siteMeta.ogDescription,
-  path: '/'
-});
