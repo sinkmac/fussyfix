@@ -55,7 +55,7 @@ None. All old ARFID routes serve 301 redirects to `/` via the overwritten page f
 |---|-------|------------|
 | Q#5 | Timings schema inconsistency | **Implemented.** `timings` split into `cookTime` (nullable duration string) and `prepNote` (text). All 168 route timings across 20 vegetables transformed. |
 | Q#18 | Chart archive URL format | **Implemented.** `/chart` for current week, `/chart/{YYYY-Www}` for archives. Current week: `2026-W28`. |
-| Q#30 | Category field structure | **Deferred.** Single-file schema (`vegetables.json` with `category: "veg"`). Multi-category expansion deferred to post-launch. |
+| Q#30 | Category field structure | **Resolved as designed.** Category field present, hardcoded to `"veg"`, multi-category expansion post-launch. |
 | Q#40 | cookTime/prepNote schema split | **Implemented.** See Q#5. |
 | Q#41 | Vote record shape | **Implemented.** Schema defined in `src/lib/data/types.ts` as `VoteRecord` interface: `{ vegetableId, methodId, voteType: 'upvote' | 'rating' | 'testimonial', timestamp, metadata }`. No voting mechanism built. |
 

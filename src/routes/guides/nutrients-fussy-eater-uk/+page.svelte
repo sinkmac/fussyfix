@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { redirect } from '@sveltejs/kit';
-
-  redirect(301, '/');
+  import { error } from '@sveltejs/kit';
+  error(404, 'Page not found');
 </script>
