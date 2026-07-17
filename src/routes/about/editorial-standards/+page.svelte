@@ -34,6 +34,11 @@
         <li>DfE, Equality Act guidance and IPSEA for school, reasonable adjustment and SEND context.</li>
         <li>SACN for nutrition reports and dietary public-health context.</li>
       </ul>
+      <h2 id="chart-methodology">Chart methodology</h2>
+      <p>The FussyFix Weekly Chart is computed weekly from UK seasonality data. Each vegetable is scored by its position within its UK season curve: vegetables rising toward their seasonal peak rank highest; those at peak hold the top positions; those exiting season fall; and those out of season rank by proximity to their next season start.</p>
+      <p>Year-round and import-only vegetables receive a flat baseline score, placing them honestly in the mid-table. Imported vegetables with a UK glasshouse season receive a modest seasonal boost during that window.</p>
+      <p>No user votes, no purchase data, no panel. The chart is a deterministic function of the date and the seasonality data — same inputs always produce the same chart.</p>
+      <p>The seasonality data is maintained in the project's <code>seasonality.json</code> file, sourced from the UK seasonality fields on individual vegetable pages.</p>
     </div>
   </article>
 </section>

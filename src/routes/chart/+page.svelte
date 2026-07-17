@@ -1,14 +1,14 @@
 <script lang="ts">
   import { pageMeta } from '$lib/pageMeta';
-  import { vegetables, methods } from '$lib/data';
-  import chartWeeks from '$lib/data/chart-weeks.json';
+  import { vegetables } from '$lib/data';
+  import seasonalityData from '$lib/data/seasonality.json';
 
   let { data } = $props();
 
   const meta = $derived(
     pageMeta({
-      title: 'Weekly chart — the FussyFix panel',
-      description: 'The weekly ranking of vegetables by redemption story strength. Curated by the FussyFix panel.',
+      title: 'Weekly chart — FussyFix',
+      description: 'Computed weekly from UK seasonality. See which vegetables are at their peak right now.',
       path: '/chart'
     })
   );
@@ -17,6 +17,14 @@
 
   function getVegName(id: string): string {
     return vegetables.vegetables.find((v) => v.id === id)?.name ?? id;
+  }
+
+  function getSeasonType(id: string): string {
+    const v = seasonalityData.find((s: any) => s.id === id);
+    if (!v) return '';
+    if (v.type === 'import_year_round') return 'import';
+    if (v.type === 'year_round') return 'year-round';
+    return '';
   }
 
   function movementClass(entry: typeof currentWeek.entries[0]): string {
@@ -57,7 +65,7 @@
       <p style="color: var(--text-muted);">Published {currentWeek.published}</p>
     </div>
     <div class="provenance-label">
-      <span>📋</span> the FussyFix panel
+      <span>📊</span> Computed weekly from UK seasonality · <a href="/about/editorial-standards#chart-methodology" style="color: var(--text-muted);">how this works</a>
     </div>
   </div>
 
@@ -70,11 +78,12 @@
           <th>Movement</th>
           <th>Weeks</th>
           <th>Peak</th>
+          <th>Season</th>
         </tr>
       </thead>
       <tbody>
         {#each currentWeek.entries as entry}
-          <tr class:relegation-zone={entry.position >= 18}>
+          <tr>
             <td class="position">{entry.position}</td>
             <td>
               <a href="/redeem/{entry.vegetableId}" style="font-weight: 700; text-decoration: none;">
@@ -85,15 +94,17 @@
                   {entry.badge === 'new' ? 'New' : entry.badge === 're-entry' ? 'Re-entry' : entry.badge === 'climber' ? 'Climber' : 'Steady'}
                 </span>
               {/if}
-              {#if entry.position >= 18}
-                <span class="relegation-label">method under review</span>
-              {/if}
             </td>
             <td class="movement">
               <span class={movementClass(entry)}>{movementText(entry)}</span>
             </td>
             <td>{entry.weeksOnChart}</td>
             <td>{entry.peak}</td>
+            <td style="color: var(--text-muted); font-size: 0.85rem;">
+              {#if getSeasonType(entry.vegetableId)}
+                <span class="badge badge--non-mover">{getSeasonType(entry.vegetableId)}</span>
+              {/if}
+            </td>
           </tr>
         {/each}
       </tbody>

@@ -216,20 +216,6 @@ h1, h2, h3 {
   color: var(--text-muted);
 }
 
-.relegation-zone {
-  background: #fdf4f0 !important;
-}
-
-.relegation-zone td {
-  border-bottom-color: var(--accent-light);
-}
-
-.relegation-label {
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-style: italic;
-}
-
 /* Provenance */
 .provenance-label {
   background: var(--border);

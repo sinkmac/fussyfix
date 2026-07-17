@@ -1,0 +1,202 @@
+[
+  {
+    "type": "seasonal",
+    "uk_start": 6,
+    "uk_end": 10,
+    "uk_peak_start": 7,
+    "uk_peak_end": 9,
+    "note": "Jun\u2013Oct (UK field); import available year-round",
+    "id": "broccoli",
+    "name": "Broccoli"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 6,
+    "uk_end": 11,
+    "uk_peak_start": 8,
+    "uk_peak_end": 10,
+    "note": "Jun\u2013Nov (UK field); import available year-round",
+    "id": "cauliflower",
+    "name": "Cauliflower"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 7,
+    "uk_end": 4,
+    "uk_peak_start": 11,
+    "uk_peak_end": 1,
+    "note": "Jul\u2013Apr (UK field + stored); import available year-round",
+    "id": "carrot",
+    "name": "Carrot"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 6,
+    "uk_end": 8,
+    "uk_peak_start": 6,
+    "uk_peak_end": 8,
+    "note": "Jun\u2013Aug (UK fresh); frozen available year-round",
+    "id": "peas",
+    "name": "Peas"
+  },
+  {
+    "type": "year_round",
+    "uk_start": null,
+    "uk_end": null,
+    "uk_peak_start": null,
+    "uk_peak_end": null,
+    "note": "Year-round (UK field + stored)",
+    "id": "potato",
+    "name": "Potato"
+  },
+  {
+    "type": "import_year_round",
+    "uk_start": null,
+    "uk_end": null,
+    "uk_peak_start": null,
+    "uk_peak_end": null,
+    "note": "Import, year-round",
+    "id": "sweet-potato",
+    "name": "Sweet Potato"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 9,
+    "uk_end": 3,
+    "uk_peak_start": 11,
+    "uk_peak_end": 1,
+    "note": "Sep\u2013Mar (UK field, improves after frost); stored into spring",
+    "id": "parsnip",
+    "name": "Parsnip"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 10,
+    "uk_end": 3,
+    "uk_peak_start": 12,
+    "uk_peak_end": 2,
+    "note": "Oct\u2013Mar (UK field + stored)",
+    "id": "swede",
+    "name": "Swede"
+  },
+  {
+    "type": "year_round",
+    "uk_start": null,
+    "uk_end": null,
+    "uk_peak_start": null,
+    "uk_peak_end": null,
+    "note": "Year-round (UK field, variety-dependent: spring greens Mar\u2013May, winter cabbage Nov\u2013Mar)",
+    "id": "cabbage",
+    "name": "Cabbage"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 9,
+    "uk_end": 3,
+    "uk_peak_start": 11,
+    "uk_peak_end": 1,
+    "note": "Sep\u2013Mar (UK field, improves after frost); curly kale year-round",
+    "id": "kale",
+    "name": "Kale"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 4,
+    "uk_end": 10,
+    "uk_peak_start": 6,
+    "uk_peak_end": 8,
+    "note": "Apr\u2013Oct (UK field); import available year-round",
+    "id": "spinach",
+    "name": "Spinach"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 7,
+    "uk_end": 9,
+    "uk_peak_start": 7,
+    "uk_peak_end": 9,
+    "note": "Jul\u2013Sep (UK field)",
+    "id": "runner-beans",
+    "name": "Runner Beans"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 6,
+    "uk_end": 8,
+    "uk_peak_start": 6,
+    "uk_peak_end": 8,
+    "note": "Jun\u2013Aug (UK field)",
+    "id": "broad-beans",
+    "name": "Broad Beans"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 6,
+    "uk_end": 10,
+    "uk_peak_start": 7,
+    "uk_peak_end": 9,
+    "note": "Jun\u2013Oct (UK field); import available year-round",
+    "id": "courgette",
+    "name": "Courgette"
+  },
+  {
+    "type": "import_year_round",
+    "uk_start": null,
+    "uk_end": null,
+    "uk_peak_start": null,
+    "uk_peak_end": null,
+    "note": "Import year-round; UK glasshouse Jul\u2013Oct",
+    "id": "aubergine",
+    "name": "Aubergine"
+  },
+  {
+    "type": "import_year_round",
+    "uk_start": null,
+    "uk_end": null,
+    "uk_peak_start": null,
+    "uk_peak_end": null,
+    "note": "Import year-round; UK glasshouse Jul\u2013Oct",
+    "id": "bell-pepper",
+    "name": "Bell Pepper"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 7,
+    "uk_end": 10,
+    "uk_peak_start": 8,
+    "uk_peak_end": 10,
+    "note": "Jul\u2013Oct (UK field); import available year-round",
+    "id": "tomato",
+    "name": "Tomato"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 5,
+    "uk_end": 9,
+    "uk_peak_start": 6,
+    "uk_peak_end": 8,
+    "note": "May\u2013Sep (UK field); import available year-round",
+    "id": "cucumber",
+    "name": "Cucumber"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 9,
+    "uk_end": 4,
+    "uk_peak_start": 12,
+    "uk_peak_end": 2,
+    "note": "Sep\u2013Apr (UK field + stored)",
+    "id": "leek",
+    "name": "Leek"
+  },
+  {
+    "type": "seasonal",
+    "uk_start": 9,
+    "uk_end": 3,
+    "uk_peak_start": 11,
+    "uk_peak_end": 1,
+    "note": "Sep\u2013Mar (UK field, improves after frost)",
+    "id": "brussels-sprouts",
+    "name": "Brussels Sprouts"
+  }
+]
