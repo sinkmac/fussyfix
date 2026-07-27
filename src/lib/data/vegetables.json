@@ -78,7 +78,8 @@
       },
       "textureProfile": "Crisp-tender florets, firm stalk when cut on bias",
       "ukSeasonality": "Jun–Oct (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiling broccoli in water leaches the flavour compounds into the cooking water and breaks down the cell walls until the florets collapse into mush. The green colour fades to grey-green as the chlorophyll degrades under prolonged heat. Gentle-heat methods like steaming or quick-blanching work differently: the heat is intense enough to cook the florets through in minutes, the cell walls stay intact, and the colour stays bright. The stalk, which the old method left woody or reduced to mush, becomes crisp-tender when sliced on the bias and cooked alongside the florets. The enemy was never water — it was duration."
     },
     {
       "id": "cauliflower",
@@ -139,7 +140,8 @@
       },
       "textureProfile": "Caramelised exterior, buttery interior when roasted; tangy-crunch when pickled",
       "ukSeasonality": "Jun–Nov (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled cauliflower disintegrates the same way broccoli does — the cell walls collapse, the flavour leaches into the water, and the florets arrive as watery, sulphurous nothing. The pale colour turns greyish and the structure becomes so soft it falls apart on the plate. Charring or roasting transforms it: the high heat drives off surface moisture and triggers browning before the interior overcooks. The result is a nutty, sweet, firm-tender floret with a charred exterior that tastes nothing like the boiled version. The cauliflower that disintegrated in water was not the vegetable's fault — it was the method's. The same cauliflower, broken into flat slices and charred in a hot pan, becomes a completely different food: sweet, nutty, firm, and nothing like the memory that made you avoid it."
     },
     {
       "id": "carrot",
@@ -185,7 +187,8 @@
       },
       "textureProfile": "Caramelised, concentrated sweetness when roasted; snappy-tang when pickled",
       "ukSeasonality": "Jul–Apr (UK field + stored); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled carrots lose their natural sugars to the cooking water, which is why the water tastes sweet and the carrot tastes of nothing. The cell walls absorb water and swell, turning the texture from firm-crisp to soft and waterlogged. The colour fades, the flavour dilutes, and what arrives on the plate is a pale orange disc that reminds you of the vegetable it used to be. Roasting does the opposite: dry heat concentrates the sugars, the surface caramelises, and the interior stays tender without collapsing. The carrot that arrived as sweet orange mush was not overcooked by accident — it was boiled. The same carrot, halved lengthwise and roasted at high heat, develops a sticky, caramelised surface and a concentrated sweetness that the boiled version never had."
     },
     {
       "id": "peas",
@@ -228,7 +231,8 @@
       },
       "textureProfile": "Blistered: pop-bright, concentrated, sweet",
       "ukSeasonality": "Jun–Aug (UK fresh); frozen available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Frozen peas boiled from frozen arrive on the plate as grey-green bullets, the skin wrinkled and the interior starchy and dull. The long boil leaches the natural sweetness and the high heat toughens the skin. The bright green colour that should signal freshness fades to a uniform grey. The redemption is to stop boiling them entirely. Gentle heat — warming through in a covered pan with a knob of butter, or adding to a dish in the last two minutes of cooking — preserves the sweetness and the bright green colour. The pea was never the problem. The boil was the problem. Frozen peas are already blanched before freezing; they need heating, not cooking."
     },
     {
       "id": "potato",
@@ -282,7 +286,8 @@
       },
       "textureProfile": "Roast: glass-crisp exterior, cloud interior; crisp: shatter; braise: silky-collapse",
       "ukSeasonality": "Year-round (UK field + stored)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The boiled potato that arrives waterlogged, bland, and falling apart is a potato that was cooked in water that was never hot enough, or for too long. The starch granules absorb water and swell until the cell walls burst, turning the interior into a gluey paste. The exterior disintegrates, the flavour dilutes, and the texture becomes something between paste and mush. Roasting, the redemption method, does the opposite: dry heat at high temperature drives off surface moisture, the starch crisps on the outside while staying fluffy within, and the Maillard reaction creates the flavour that boiling leaches away. The potato that was 'boring' was not the potato — it was the pot of water. A potato roasted in its skin until the interior is fluffy and the skin is crisp is a different food entirely."
     },
     {
       "id": "sweet-potato",
@@ -336,7 +341,8 @@
       },
       "textureProfile": "Caramelised exterior, velvety interior when roasted; silky when braised",
       "ukSeasonality": "Import, year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled sweet potato becomes waterlogged, fibrous, and bland — the natural sugars that should be the point of the vegetable dissolve into the cooking water, and the texture turns to wet stringiness. The skin, which is edible and flavourful when roasted, becomes slippery and unappealing. The orange flesh that should be creamy and sweet turns pale and watery. Roasting or charring at high heat caramelises the sugars on the surface, creating a sticky, sweet exterior while the interior becomes creamy and tender. The sweet potato was never bland. It was boiled into submission. The same sweet potato, cut into wedges and roasted at high heat, develops a caramelised crust and a concentrated sweetness that the boiled version could never achieve."
     },
     {
       "id": "parsnip",
@@ -390,7 +396,8 @@
       },
       "textureProfile": "Caramelised, honeyed exterior, tender-cream interior when roasted",
       "ukSeasonality": "Sep–Mar (UK field, improves after frost); stored into spring",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The parsnip's woody core is a real structure — it develops as the parsnip grows, and large parsnips have a core that stays fibrous and tough even after cooking. The childhood failure was a combination of boiling (which turns the outer flesh to sweet mush while leaving the core untouched) and using parsnips that were too large to begin with. Roasting with the core removed, or choosing smaller parsnips, solves both problems. The dry heat caramelises the sugars, the exterior crisps, and the interior becomes tender-cream rather than fibrous mush. The parsnip that was 'woody' was either too big or boiled too long. Both are fixable."
     },
     {
       "id": "swede",
@@ -444,7 +451,8 @@
       },
       "textureProfile": "Roast: sweet, nutty, tender; braise: silky, mellow, concentrated",
       "ukSeasonality": "Oct–Mar (UK field + stored)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled swede (neeps, to use the right name) is the standard preparation and the standard disappointment: waterlogged, fibrous, bland, with the faint sweetness that could have been something diluted into grey water. The high water content of swede means boiling it is a guaranteed path to mush. The pale yellow flesh loses its colour, its structure, and its flavour to the cooking water. Roasting or mashing with butter and pepper after roasting transforms it: the dry heat concentrates the flavour, the fibres soften without disintegrating, and the natural sweetness finally has a chance to show up. The swede that tasted of nothing was not the swede — it was the boil. Cubed and roasted at high heat, swede develops a sweet, nutty character that the boiled version never hints at."
     },
     {
       "id": "cabbage",
@@ -509,7 +517,8 @@
       },
       "textureProfile": "Charred: smoky-sweet, tender-crisp; pickled: tangy-crunch, bright",
       "ukSeasonality": "Year-round (UK field, variety-dependent: spring greens Mar–May, winter cabbage Nov–Mar)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The smell of cooking cabbage is not the smell of cabbage. It is the smell of boiling water releasing sulphur compounds from the vegetable's cell walls. Cabbage stores glucosinolates that react with water under heat to produce hydrogen sulphide and dimethyl sulphide — the gases that fill your kitchen and linger for hours. The longer it boils, the more sulphur is released, and the more the cabbage loses its structure, colour, and flavour to the water. High-heat methods — charring, blistering, stir-frying — work differently. The heat is intense enough to brown the outside before the interior has time to release its sulphur. The Maillard reaction creates savoury, nutty flavour compounds, and the cooking is over in minutes rather than the twenty-plus it takes to make cabbage smell like a school kitchen. The smell is not the vegetable. It is the method."
     },
     {
       "id": "kale",
@@ -563,7 +572,8 @@
       },
       "textureProfile": "Crisp: shatter-light, savoury; raw-thin: tenderised by massage, fresh-bitter",
       "ukSeasonality": "Sep–Mar (UK field, improves after frost); curly kale year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The problem with kale is almost always the method: long-boiled or steamed until it becomes a dark, wet, chewy mass that tastes of nothing but regret. The tough cell structure of kale needs high heat and dry conditions to break down properly. Roasting or flash-frying at high heat makes the leaves crisp and nutty; the water content evaporates rather than pooling in the bottom of the pan. The bitterness that some people associate with kale is the same glucosinolate chemistry as cabbage and sprouts — and it is exacerbated by slow, wet cooking. High heat and short duration are the fix."
     },
     {
       "id": "spinach",
@@ -632,7 +642,8 @@
       },
       "textureProfile": "Blistered: wilted-bright, silky; raw: fresh, peppery, crisp",
       "ukSeasonality": "Apr–Oct (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled spinach reduces to a dark, slimy, flavourless puddle. The leaves are 90% water, and boiling them releases that water into the pan, leaving behind a collapsed, nutrient-leached shadow of what it was. The vibrant green turns dark and dull, and the texture becomes slippery and unappealing. The redemption is to stop cooking it in water: high-heat wilting in a dry pan, or adding it to dishes in the final minute, preserves the texture and the flavour. The water that pools in the bottom of the pan after boiled spinach is the flavour you were hoping to eat. Cook it dry, and that flavour stays on the leaf. A handful of spinach dropped into a hot pan for thirty seconds wilts to a fraction of its volume but keeps its colour and taste."
     },
     {
       "id": "runner-beans",
@@ -693,7 +704,8 @@
       },
       "textureProfile": "Blistered: tender-crisp, bright green; raw-thin: snappy, fresh, grassy",
       "ukSeasonality": "Jul–Sep (UK field)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Runner beans boiled to collapse are a UK school-dinner classic: grey-green, stringy, waterlogged, and tasting of the water they were boiled in. The string along the edge of the bean is a real structure that needs to be removed before cooking — the childhood version often left it in, producing a tough, chewy strip running the length of the bean. The redemption is high-heat cooking: charring or blistering in a hot pan preserves the bright green colour, the interior stays firm-tender, and the string is removed before cooking. The beans that were 'stringy and watery' had the string left in and were boiled too long. Both are method choices."
     },
     {
       "id": "broad-beans",
@@ -762,7 +774,8 @@
       },
       "textureProfile": "Blistered: pop-tender, bright; raw: sweet, creamy-crunch, fresh",
       "ukSeasonality": "Jun–Aug (UK field)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Broad beans are the most mis-cooked vegetable in the British kitchen. Boiled until the outer skin is tough and the inner bean is mealy, they arrive on the plate as grey, floury bullets. The tough grey skin is the specific texture that people remember — it sticks to the roof of the mouth and the bean inside is bland and pasty. The double-shelling method — blanch, slip the skins, then cook the bright green interior — is the redemption that most people never learn. The second cooking is brief, gentle, and preserves the creamy texture and sweet flavour. The broad bean that was 'chewy and bland' was never double-shelled. The skin was the problem, not the bean. The bright green interior that emerges after shelling is a completely different ingredient."
     },
     {
       "id": "courgette",
@@ -816,7 +829,8 @@
       },
       "textureProfile": "Charred: smoky-sweet, tender-firm; raw-thin: fresh, crisp, delicate",
       "ukSeasonality": "Jun–Oct (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Courgette is 95% water. When you cook it slowly or at low heat, that water releases into the pan, and the courgette steams in its own juices until it becomes translucent, watery, flavourless mush. The fix is high heat and short duration. A hot pan, a thin slice, and two minutes per side produces courgette that is browned on the outside and tender-crisp within — a completely different vegetable from the wet, bland discs of memory. The water that pooled in the pan was the flavour you lost. Cook it hot and fast, and that flavour stays in the courgette."
     },
     {
       "id": "aubergine",
@@ -874,7 +888,9 @@
       },
       "textureProfile": "Charred: smoky, silky-collapse; roasted: creamy, concentrated",
       "ukSeasonality": "Import year-round; UK glasshouse Jul–Oct",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The slimy, oil-logged aubergine that people remember is a specific cooking error: cold oil, insufficient heat, and thick slices that absorb fat like a sponge before the interior has a chance to cook. The cell structure of aubergine is sponge-like, and when it hits oil that is not hot enough, it drinks the oil and collapses into a greasy, bitter slab. The fix is high heat and sufficient oil — or better, roasting whole until the interior collapses into silky, creamy flesh that needs no frying at all. The aubergine that was 'a slimy sponge' was cooked wrong. The same vegetable, roasted whole and scooped from the skin, is silky, smoky, and nothing like the memory. The silky texture some people love is the same texture others call slimy. That is a preference split, not a method failure — and we can teach you to avoid the undercooked, oil-logged version that gives it a bad name.",
+      "thesisCaveat": "The silky, custardy texture that some people love is the same texture others experience as slimy. That is a genuine preference split, not a method failure. We can teach you to avoid the undercooked, spongy, oil-logged aubergine that gives it a bad name — but we cannot promise to convert a texture you simply do not prefer."
     },
     {
       "id": "bell-pepper",
@@ -928,7 +944,8 @@
       },
       "textureProfile": "Charred: smoky-sweet, silky (skin removed); raw: crisp, bright, juicy",
       "ukSeasonality": "Import year-round; UK glasshouse Jul–Oct",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The complaint about bell peppers is almost always about the raw or undercooked version: tough, bitter skin, watery flesh, and a flavour that dominates everything it touches. The skin contains compounds that can taste bitter, especially in green peppers, which are less ripe than red, yellow, or orange ones. The method fix is to char or roast the pepper until the skin blisters and peels away, and the flesh softens and sweetens. The difference between a raw green pepper and a roasted red pepper is the difference between a vegetable you tolerate and one you seek out. The bitterness is in the skin; remove it, and the problem goes with it."
     },
     {
       "id": "tomato",
@@ -978,7 +995,8 @@
       },
       "textureProfile": "Roast: concentrated, jammy, intense; raw: juicy, bright, sweet-acid balance",
       "ukSeasonality": "Jul–Oct (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The complaint about raw tomatoes — mealy, watery, bland, tough-skinned — is a complaint about out-of-season tomatoes grown for shelf life rather than flavour. The flesh is pale, the texture is cottony, and the skin is thick and chewy. The method fix for the tomatoes you actually have is roasting: the dry heat concentrates the flavour, the skin splits and can be removed, and the interior becomes jammy and sweet. The tinned tomato that works in every sauce is already the redemption version — it was picked ripe and processed immediately. The raw tomato that tastes of nothing is a logistics problem, not a vegetable problem. Cherry tomatoes roasted until they collapse become sweet, concentrated bombs of flavour that bear no resemblance to the pale supermarket slicing tomato."
     },
     {
       "id": "cucumber",
@@ -1010,7 +1028,8 @@
       },
       "textureProfile": "Pickled: tangy-crunch, bright; raw-thin: delicate-crisp, fresh, cooling",
       "ukSeasonality": "May–Sep (UK field); import available year-round",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The complaint about cucumber is almost always about the watery, bland, seedy interior — the part that makes a cucumber sandwich go soggy or a salad pool at the bottom of the bowl. The high water content means that slicing and serving without preparation guarantees a wet, flavourless result. The method fix is to salt the cucumber slices before using them: the salt draws out the excess water by osmosis, concentrating the flavour and keeping the texture firm. The seeded slices, the skin that some people find bitter — these are structural details that are easy to manage. The cucumber that turned your salad into soup was not a bad cucumber. It was an unsalted one. A few minutes with salt, a rinse, and a dry towel changes everything."
     },
     {
       "id": "leek",
@@ -1064,7 +1083,8 @@
       },
       "textureProfile": "Charred: smoky-sweet, tender; braised: silky, mellow, buttery",
       "ukSeasonality": "Sep–Apr (UK field + stored)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "The leek's problem is the dirt trapped between its layers and the tendency to boil it into a slimy, flavourless rope. The grit is a real practical barrier — leeks need thorough washing, and the childhood version often skipped this step, producing a gritty, unpleasant texture. The boil turns the layered structure into slippery, waterlogged ribbons. The redemption is to char or roast the leek, or to sweat it gently in butter: the high heat dries the surface, concentrates the flavour, and transforms the texture from slippery to silky. The grit is a prep issue; the slime is a method issue. Both are fixable."
     },
     {
       "id": "brussels-sprouts",
@@ -1133,7 +1153,57 @@
       },
       "textureProfile": "Roast: caramelised-crisp exterior, tender interior; charred: smoky-sweet, crisp-edged",
       "ukSeasonality": "Sep–Mar (UK field, improves after frost)",
-      "chartEligible": true
+      "chartEligible": true,
+      "causeAndFix": "Boiled brussels sprouts release the same sulphur compounds as cabbage, and for the same reason: the brassica family stores glucosinolates that react with water under heat to produce hydrogen sulphide. The longer they boil, the more the outer leaves disintegrate into grey mush while the interior stays hard. The cross-cut base, a traditional preparation, makes this worse by opening the sprout to water penetration on one side. Roasting or charring solves both problems. Halving the sprout exposes the cut surface to direct heat, which triggers the Maillard reaction and caramelises the natural sugars. The high heat drives off surface moisture quickly, allowing browning before the interior releases its sulphur. The result is a crisp, caramelised exterior with a tender, nutty interior — a completely different vegetable.",
+      "thesisCaveat": "Bitterness in brussels sprouts is real. Some people carry a genetic variant (TAS2R38) that makes them far more sensitive to the bitter compounds in brassicas. High-heat roasting reduces bitterness by caramelising sugars and creating savoury Maillard compounds that mask it, but it does not eliminate the genetic difference. If you have tried sprouts roasted every way and still find them bitter, that is not a failure of method — it is your biology, and it is not the vegetable's fault or yours."
+    },
+    {
+      "id": "beetroot",
+      "name": "Beetroot",
+      "childhoodFailureMode": "Boiled to a watery, earth-flavoured mush — the colour bleeds into the water, the sweetness leaches out, and what arrives on the plate is a floppy, purple, dirt-tasting disc. Or: pickled from a jar, vinegary and flaccid, the only form most people have encountered.",
+      "redemptionMethods": [
+        "roast",
+        "char",
+        "raw-thin"
+      ],
+      "redemptionOneLiner": "The earthiness is real. It's also the point.",
+      "timings": {
+        "roast": {
+          "oven": {
+            "cookTime": "45–60 min",
+            "prepNote": "whole, wrapped in foil @190°C"
+          },
+          "air-fryer": {
+            "cookTime": "30–40 min",
+            "prepNote": "whole, wrapped in foil @180°C"
+          }
+        },
+        "char": {
+          "grill": {
+            "cookTime": "25–30 min",
+            "prepNote": "halved, cut-side down"
+          },
+          "pan": {
+            "cookTime": "20–25 min",
+            "prepNote": "halved, covered, turning once"
+          }
+        },
+        "raw-thin": {
+          "mandolin": {
+            "cookTime": null,
+            "prepNote": "1–2mm slices or julienne"
+          },
+          "grater": {
+            "cookTime": null,
+            "prepNote": "coarse grate, dress immediately"
+          }
+        }
+      },
+      "textureProfile": "Roasted: tender, concentrated, fudge-like; raw: crisp, earthy-sweet, dense",
+      "ukSeasonality": "Jun–Feb (UK field); stored into spring",
+      "chartEligible": true,
+      "causeAndFix": "Boiling beetroot in water is a double loss. The geosmin compounds that give beetroot its earthy flavour are water-soluble, so they dissolve into the cooking water — along with the natural sugars and the betalain pigments that make it red. What you are left with is a diluted, greyish version of what it could be. The water you pour down the sink contained all the flavour you were hoping to eat. Roasting whole in the skin does the opposite: the dry heat concentrates the sugars, the skin traps the moisture, and the earthy flavour stays in the vegetable where it belongs. That earthiness is geosmin, a naturally occurring compound that some people are far more sensitive to than others. It is not a flaw. It is the flavour of the vegetable, and the goal is not to eliminate it but to balance it — acid cuts through it, fat rounds it, and roasting transforms it from a liability into the thing that makes beetroot taste like itself.",
+      "thesisCaveat": "The earthy flavour of beetroot is not a cooking error. It is geosmin, a real compound in the vegetable, and some people are genetically more sensitive to it than others. Roasting and acid pairings balance it; they do not erase it. The redemption here is working with the flavour, not denying it."
     }
   ],
   "_singleRouteCards": [

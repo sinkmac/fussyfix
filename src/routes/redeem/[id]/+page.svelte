@@ -50,6 +50,15 @@
       It was never the vegetable. It was the method.
     </p>
 
+    {#if data.veg.causeAndFix}
+      <div class="cause-and-fix" style="margin-top: 1rem; padding: 1rem; background: var(--surface-subtle, #f8f8f8); border-left: 3px solid var(--brand-dark, #333);">
+        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text, #333);">{data.veg.causeAndFix}</p>
+        {#if data.veg.thesisCaveat}
+          <p style="margin: 0.75rem 0 0; font-size: 0.9rem; line-height: 1.5; color: var(--text-muted, #666); font-style: italic;">{data.veg.thesisCaveat}</p>
+        {/if}
+      </div>
+    {/if}
+
     {#each data.veg.redemptionMethods as methodId}
       {@const method = bestMethod(methodId)}
       {#if method}

@@ -17,6 +17,8 @@ export interface Vegetable {
   textureProfile: string;
   ukSeasonality: string;
   chartEligible: boolean;
+  causeAndFix?: string;       // 120–200 words bridging failure mode to methods
+  thesisCaveat?: string;      // optional, for 3 vegetables only
 }
 
 export interface Method {
