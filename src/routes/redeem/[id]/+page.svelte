@@ -49,7 +49,7 @@
         style="flex:1; min-width:220px; padding:0.7rem 1rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.95rem;">
       <input type="submit" value="Get the free fixes" class="primary-button" style="border:0;">
     </form>
-    <p style="margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--text-muted);">Free PDF. One email when it's ready. No upsells you didn't ask for.</p>
+    <p style="margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--text-muted);">Free PDF, delivered instantly. No email step, no upsells you didn't ask for.</p>
   </div>
 
   <div class="redemption-card">
