@@ -31,6 +31,27 @@
 <section class="page-shell">
   <a href="/redeem" class="secondary-button" style="margin-bottom: 1rem;">← All vegetables</a>
 
+  <div class="card freebie-optin" style="margin-bottom: 1.5rem; background: #f0f4e8; border: 1px solid var(--border);">
+    <div class="eyebrow" style="color: var(--brand-dark);">The free fix</div>
+    <h2 style="margin: 0.3rem 0; color: var(--brand-dark); font-size: 1.25rem;">Stuck on {data.veg.name}? Get all five fixes free.</h2>
+    <p style="margin: 0 0 0.75rem; color: var(--text-muted); font-size: 0.95rem;">
+      Five vegetables, five fixes — the ones most people have been served badly — in one short PDF. Same method-first approach as this page.
+    </p>
+    <!-- Freebie opt-in. Ships as a Netlify-registered form via the static detection file;
+         the live SSR page posts here and _next routes to the thank-you/download page. -->
+    <form name="fussy-eater-fix-freebie" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/freebie/netlify-v5.html" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0;">
+      <input type="hidden" name="form-name" value="fussy-eater-fix-freebie" />
+      <input type="hidden" name="_next" value="/freebie/thank-you.html" />
+      <div style="position:absolute; left:-5000px;" aria-hidden="true">
+        <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </div>
+      <input type="email" name="email" required placeholder="you@example.com" aria-label="Email"
+        style="flex:1; min-width:220px; padding:0.7rem 1rem; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.95rem;">
+      <input type="submit" value="Get the free fixes" class="primary-button" style="border:0;">
+    </form>
+    <p style="margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--text-muted);">Free PDF. One email when it's ready. No upsells you didn't ask for.</p>
+  </div>
+
   <div class="redemption-card">
     <div class="eyebrow">Redeem</div>
     <h1 style="font-size: 2rem; color: var(--brand-dark);">{data.veg.name}</h1>

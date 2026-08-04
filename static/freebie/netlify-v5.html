@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+  Netlify form detection file for the 5 Vegetables, 5 Fixes freebie opt-in.
+  The redeem pages are SvelteKit server-rendered on demand, so a form embedded
+  in them is not present in the static deploy bundle and Netlify's detection
+  bot cannot register it. This static file carries the SAME form definition
+  (same name + fields), so Netlify registers `fussy-eater-fix-freebie` at
+  deploy time and intercepts POSTs to it. The live redeem form posts here;
+  the _next hidden field routes the user to the thank-you/download page.
+  Same pattern as BiteForecast's public/netlify-forms.html.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <title>FussyFix — freebie opt-in</title>
+  <meta http-equiv="refresh" content="0; url=/freebie/thank-you.html" />
+</head>
+<body>
+  <form name="fussy-eater-fix-freebie" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="fussy-eater-fix-freebie" />
+    <input type="hidden" name="_next" value="/freebie/thank-you.html" />
+    <p style="display:none;">
+      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+    <label>Email <input type="email" name="email" /></label>
+    <button type="submit">Get the free fixes</button>
+  </form>
+</body>
+</html>
