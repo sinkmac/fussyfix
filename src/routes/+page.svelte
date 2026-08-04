@@ -58,6 +58,19 @@
   </div>
 
   <div style="margin-top: 2rem;" class="card">
+    <div class="eyebrow">The book</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between;">
+      <div style="max-width: 520px;">
+        <h2 style="margin: 0.3rem 0; color: var(--brand-dark);">The Fussy Eater Fix</h2>
+        <p style="color: var(--text-muted); margin: 0;">
+          Ten vegetables you were taught to hate, cooked the one way that works — full chapters, recipes, and the fussy-eater angle for each. It was never the vegetable. It was the method.
+        </p>
+      </div>
+      <a href="/books/fussy-eater-fix/" class="primary-button">See the book</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;" class="card">
     <h2>How it works</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
       <div>

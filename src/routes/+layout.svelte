@@ -14,6 +14,7 @@
   <nav>
     <a href="/redeem">Redeem a vegetable</a>
     <a href="/chart">Weekly chart</a>
+    <a href="/books/fussy-eater-fix/">The Fussy Eater Fix</a>
     <a href="/about">About</a>
   </nav>
 </header>
@@ -28,6 +29,7 @@
     <a href="/chart">Weekly chart</a>
     <a href="/about">About</a>
     <a href="/about/editorial-standards">Editorial standards</a>
+    <a href="/books/fussy-eater-fix/">The Fussy Eater Fix</a>
     <a href="/privacy">Privacy</a>
     <a href="/cookies">Cookies</a>
     <a href="/terms">Terms</a>
