@@ -110,3 +110,53 @@ export function faqSchema(faqs: FaqItem[]): FaqPageSchema {
     }))
   };
 }
+
+interface RecipeStep {
+  name: string;
+  text: string;
+}
+
+interface RecipeSchema {
+  '@context': 'https://schema.org';
+  '@type': 'Recipe';
+  name: string;
+  description: string;
+  url: string;
+  recipeCategory: string;
+  recipeInstructions: RecipeStep[];
+  recipeNotes?: string;
+}
+
+interface RecipeSchemaInput {
+  name: string;
+  description: string;
+  path: string;
+  steps: RecipeStep[];
+  alternateMethods: string[];
+}
+
+/**
+ * Recipe schema for a /redeem/[id] page. Built from the veg's crowned best
+ * method (redemptionMethods[0]): one HowToStep per delivery route with its
+ * cook time, alternates listed in recipeNotes. No ingredients/images emitted
+ * because the data model doesn't carry them — this is method-level markup,
+ * not a full recipe card.
+ */
+export function recipeSchema({ name, description, path, steps, alternateMethods }: RecipeSchemaInput): RecipeSchema {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name,
+    description,
+    url: absoluteUrl(path),
+    recipeCategory: 'Vegetable dish',
+    recipeInstructions: steps.map((step) => ({
+      '@type': 'HowToStep',
+      name: step.name,
+      text: step.text
+    })),
+    ...(alternateMethods.length > 0
+      ? { recipeNotes: `Also works: ${alternateMethods.join(', ')}.` }
+      : {})
+  };
+}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { schema }: { schema: Record<string, unknown> | Record<string, unknown>[] } = $props();
+  let { schema }: { schema: object | object[] } = $props();
 
   const schemaJson = $derived(JSON.stringify(schema).replace(/</g, '\u003c'));
 </script>

@@ -1,6 +1,8 @@
 <script lang="ts">
+  import SchemaScript from '$lib/SchemaScript.svelte';
   import { pageMeta } from '$lib/pageMeta';
   import { vegetables, methods } from '$lib/data';
+  import { recipeSchema, faqSchema } from '$lib/editorial';
   import { error } from '@sveltejs/kit';
 
   let { data } = $props();
@@ -16,6 +18,39 @@
   function bestMethod(methodId: string) {
     return methods.methods.find((m: { id: string }) => m.id === methodId);
   }
+
+  // Structured data — Recipe for the crowned best method (redemptionMethods[0]),
+  // FAQPage from the cause-and-fix block where one exists.
+  const leadMethod = $derived(bestMethod(data.veg.redemptionMethods[0]));
+  const leadTimings: Record<string, { cookTime: string | null; prepNote: string }> = $derived(
+    (data.veg.timings as any)[data.veg.redemptionMethods[0]] || {}
+  );
+  const alternateMethods = $derived(
+    data.veg.redemptionMethods.slice(1).map((id) => bestMethod(id)?.name).filter((n): n is string => Boolean(n))
+  );
+  const recipe = $derived(
+    recipeSchema({
+      name: `${data.veg.name} — ${leadMethod?.name ?? 'cooked'} method`,
+      description: leadMethod?.description ?? '',
+      path: `/redeem/${data.veg.id}`,
+      steps: Object.entries(leadTimings).map(([route, t]) => ({
+        name: route,
+        text: [t.cookTime, t.prepNote].filter(Boolean).join(' — ')
+      })),
+      alternateMethods
+    })
+  );
+  const faq = $derived(
+    data.veg.causeAndFix && !data.veg.causeAndFix.startsWith('TBD')
+      ? faqSchema([
+          {
+            question: `Why does ${data.veg.name.toLowerCase()} taste bad when boiled?`,
+            answer: data.veg.causeAndFix
+          }
+        ])
+      : null
+  );
+  const schemas = $derived([recipe, faq].filter(Boolean));
 </script>
 
 <svelte:head>
@@ -27,6 +62,7 @@
   <meta property="og:url" content={meta.ogUrl} />
   <meta property="og:type" content="article" />
 </svelte:head>
+<SchemaScript schema={schemas} />
 
 <section class="page-shell">
   <a href="/redeem" class="secondary-button" style="margin-bottom: 1rem;">← All vegetables</a>
