@@ -9,6 +9,21 @@
   });
 
   const featured = vegetables.vegetables.slice(0, 4);
+
+  // Full chapter guides published free on the site. Data-driven so the "Free
+  // chapters" grid stays in step as more vegetables are added.
+  const chapters = [
+    { name: 'Potato', path: '/guides/potato-redemption', blurb: 'The one that was "boring" — it was the pot of water.' },
+    { name: 'Cauliflower', path: '/guides/cauliflower-redemption', blurb: 'Boiled nothing, becoming something in the oven.' },
+    { name: 'Carrot', path: '/guides/carrot-redemption', blurb: 'The sugar you were boiling away.' },
+    { name: 'Peas', path: '/guides/peas-redemption', blurb: 'Frozen peas only need heating, not cooking.' },
+    { name: 'Spinach', path: '/guides/spinach-redemption', blurb: 'The flavour left in the pan.' },
+    { name: 'Swede', path: '/guides/swede-redemption', blurb: 'The neep that was never meant to be boiled.' },
+    { name: 'Tomato', path: '/guides/tomato-redemption', blurb: 'The winter pink one was never the vegetable.' },
+    { name: 'Broad beans', path: '/guides/broad-beans-redemption', blurb: 'The skin was the problem, not the bean.' },
+    { name: 'Cucumber', path: '/guides/cucumber-redemption', blurb: 'The salad that pooled was never the cucumber.' },
+    { name: 'Cabbage', path: '/guides/cabbage-redemption', blurb: 'The smell was in the water, not the vegetable.' }
+  ];
 </script>
 
 <svelte:head>
@@ -61,11 +76,12 @@
     <h2>Free chapters — the method, in full</h2>
     <p style="color: var(--text-muted); margin: 0 0 1rem;">These vegetables are the front of the book, published free and in full. One method each, from the memory that made you avoid them to the fix that turns them around.</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
-      <a href="/guides/potato-redemption" class="veg-card"><h3>Potato</h3><p class="failure-preview">The one that was "boring" — it was the pot of water.</p></a>
-      <a href="/guides/cauliflower-redemption" class="veg-card"><h3>Cauliflower</h3><p class="failure-preview">Boiled nothing, becoming something in the oven.</p></a>
-      <a href="/guides/carrot-redemption" class="veg-card"><h3>Carrot</h3><p class="failure-preview">The sugar you were boiling away.</p></a>
-      <a href="/guides/peas-redemption" class="veg-card"><h3>Peas</h3><p class="failure-preview">Frozen peas only need heating, not cooking.</p></a>
-      <a href="/guides/spinach-redemption" class="veg-card"><h3>Spinach</h3><p class="failure-preview">The flavour left in the pan.</p></a>
+      {#each chapters as chapter}
+        <a href={chapter.path} class="veg-card">
+          <h3>{chapter.name}</h3>
+          <p class="failure-preview">{chapter.blurb}</p>
+        </a>
+      {/each}
     </div>
   </div>
 

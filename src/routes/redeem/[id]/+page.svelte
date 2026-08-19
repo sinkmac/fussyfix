@@ -14,7 +14,12 @@
     cauliflower: '/guides/cauliflower-redemption',
     carrot: '/guides/carrot-redemption',
     peas: '/guides/peas-redemption',
-    spinach: '/guides/spinach-redemption'
+    spinach: '/guides/spinach-redemption',
+    swede: '/guides/swede-redemption',
+    tomato: '/guides/tomato-redemption',
+    'broad-beans': '/guides/broad-beans-redemption',
+    cucumber: '/guides/cucumber-redemption',
+    cabbage: '/guides/cabbage-redemption'
   };
   const chapterPath = $derived(chapterGuides[data.veg.id]);
 

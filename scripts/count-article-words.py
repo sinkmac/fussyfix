@@ -28,7 +28,9 @@ GUIDES = [
     "mealtime-survival-scripts", "nutrients-fussy-eater-uk",
     "recipes-fussy-eaters-uk", "safe-foods-fussy-eaters", "school-fussy-eater-uk",
     "potato-redemption", "cauliflower-redemption", "carrot-redemption",
-    "peas-redemption", "spinach-redemption",
+    "peas-redemption", "spinach-redemption", "swede-redemption",
+    "tomato-redemption", "broad-beans-redemption", "cucumber-redemption",
+    "cabbage-redemption",
 ]
 
 

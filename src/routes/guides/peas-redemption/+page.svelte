@@ -76,6 +76,11 @@
       <a href="/guides/cauliflower-redemption">Cauliflower chapter</a>
       <a href="/guides/carrot-redemption">Carrot chapter</a>
       <a href="/guides/spinach-redemption">Spinach chapter</a>
+      <a href="/guides/swede-redemption">Swede chapter</a>
+      <a href="/guides/tomato-redemption">Tomato chapter</a>
+      <a href="/guides/broad-beans-redemption">Broad beans chapter</a>
+      <a href="/guides/cucumber-redemption">Cucumber chapter</a>
+      <a href="/guides/cabbage-redemption">Cabbage chapter</a>
       <a href="/guides/safe-foods-fussy-eaters">Safe foods for fussy eaters</a>
       <a class="primary-button" href="/redeem">{toolCta}</a>
     </section>
