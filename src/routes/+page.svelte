@@ -22,7 +22,10 @@
     { name: 'Tomato', path: '/guides/tomato-redemption', blurb: 'The winter pink one was never the vegetable.' },
     { name: 'Broad beans', path: '/guides/broad-beans-redemption', blurb: 'The skin was the problem, not the bean.' },
     { name: 'Cucumber', path: '/guides/cucumber-redemption', blurb: 'The salad that pooled was never the cucumber.' },
-    { name: 'Cabbage', path: '/guides/cabbage-redemption', blurb: 'The smell was in the water, not the vegetable.' }
+    { name: 'Cabbage', path: '/guides/cabbage-redemption', blurb: 'The smell was in the water, not the vegetable.' },
+    { name: 'Brussels sprouts', path: '/guides/brussels-sprouts-redemption', blurb: 'The bitterness that isn\'t the method\'s fault.' },
+    { name: 'Beetroot', path: '/guides/beetroot-redemption', blurb: 'The earthiness that isn\'t a cooking mistake.' },
+    { name: 'Aubergine', path: '/guides/aubergine-redemption', blurb: 'The silky-slimy split that isn\'t a method failure.' }
   ];
 </script>
 
@@ -74,7 +77,7 @@
 
   <div style="margin-top: 2rem;" class="card">
     <h2>Free chapters — the method, in full</h2>
-    <p style="color: var(--text-muted); margin: 0 0 1rem;">These vegetables are the front of the book, published free and in full. One method each, from the memory that made you avoid them to the fix that turns them around.</p>
+    <p style="color: var(--text-muted); margin: 0 0 1rem;">Every chapter from the book, published free and in full. Most are clean method fixes; a few are honest about the vegetables that have a real biological or preference ceiling.</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
       {#each chapters as chapter}
         <a href={chapter.path} class="veg-card">

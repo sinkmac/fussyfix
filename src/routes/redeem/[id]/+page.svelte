@@ -19,7 +19,10 @@
     tomato: '/guides/tomato-redemption',
     'broad-beans': '/guides/broad-beans-redemption',
     cucumber: '/guides/cucumber-redemption',
-    cabbage: '/guides/cabbage-redemption'
+    cabbage: '/guides/cabbage-redemption',
+    'brussels-sprouts': '/guides/brussels-sprouts-redemption',
+    beetroot: '/guides/beetroot-redemption',
+    aubergine: '/guides/aubergine-redemption'
   };
   const chapterPath = $derived(chapterGuides[data.veg.id]);
 

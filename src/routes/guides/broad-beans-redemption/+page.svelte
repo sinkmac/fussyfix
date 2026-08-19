@@ -86,6 +86,9 @@
       <a href="/guides/tomato-redemption">Tomato chapter</a>
       <a href="/guides/cucumber-redemption">Cucumber chapter</a>
       <a href="/guides/cabbage-redemption">Cabbage chapter</a>
+      <a href="/guides/brussels-sprouts-redemption">Brussels sprouts chapter</a>
+      <a href="/guides/beetroot-redemption">Beetroot chapter</a>
+      <a href="/guides/aubergine-redemption">Aubergine chapter</a>
       <a href="/guides/safe-foods-fussy-eaters">Safe foods for fussy eaters</a>
       <a class="primary-button" href="/redeem">{toolCta}</a>
     </section>

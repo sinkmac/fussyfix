@@ -30,7 +30,8 @@ GUIDES = [
     "potato-redemption", "cauliflower-redemption", "carrot-redemption",
     "peas-redemption", "spinach-redemption", "swede-redemption",
     "tomato-redemption", "broad-beans-redemption", "cucumber-redemption",
-    "cabbage-redemption",
+    "cabbage-redemption", "brussels-sprouts-redemption", "beetroot-redemption",
+    "aubergine-redemption",
 ]
 
 
