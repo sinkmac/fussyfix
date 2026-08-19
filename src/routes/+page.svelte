@@ -58,6 +58,18 @@
   </div>
 
   <div style="margin-top: 2rem;" class="card">
+    <h2>Free chapters — the method, in full</h2>
+    <p style="color: var(--text-muted); margin: 0 0 1rem;">These vegetables are the front of the book, published free and in full. One method each, from the memory that made you avoid them to the fix that turns them around.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      <a href="/guides/potato-redemption" class="veg-card"><h3>Potato</h3><p class="failure-preview">The one that was "boring" — it was the pot of water.</p></a>
+      <a href="/guides/cauliflower-redemption" class="veg-card"><h3>Cauliflower</h3><p class="failure-preview">Boiled nothing, becoming something in the oven.</p></a>
+      <a href="/guides/carrot-redemption" class="veg-card"><h3>Carrot</h3><p class="failure-preview">The sugar you were boiling away.</p></a>
+      <a href="/guides/peas-redemption" class="veg-card"><h3>Peas</h3><p class="failure-preview">Frozen peas only need heating, not cooking.</p></a>
+      <a href="/guides/spinach-redemption" class="veg-card"><h3>Spinach</h3><p class="failure-preview">The flavour left in the pan.</p></a>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;" class="card">
     <div class="eyebrow">The book</div>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between;">
       <div style="max-width: 520px;">

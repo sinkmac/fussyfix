@@ -7,6 +7,17 @@
 
   let { data } = $props();
 
+  // Vegetable → full eBook-style chapter guide, where published. This is the
+  // standalone long-form content slot for the "Fussy Eater Fix" chapters.
+  const chapterGuides: Record<string, string> = {
+    potato: '/guides/potato-redemption',
+    cauliflower: '/guides/cauliflower-redemption',
+    carrot: '/guides/carrot-redemption',
+    peas: '/guides/peas-redemption',
+    spinach: '/guides/spinach-redemption'
+  };
+  const chapterPath = $derived(chapterGuides[data.veg.id]);
+
   const meta = $derived(
     pageMeta({
       title: `${data.veg.name} — redeem it`,
@@ -157,6 +168,9 @@
     </div>
 
     <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      {#if chapterPath}
+        <a href={chapterPath} class="primary-button">Read the full {data.veg.name} chapter</a>
+      {/if}
       <a href="/chart" class="secondary-button">Chart</a>
       <a href="/veg/{data.veg.id}" class="secondary-button">Chart history for {data.veg.name}</a>
     </div>
