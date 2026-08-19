@@ -22,7 +22,14 @@
     cabbage: '/guides/cabbage-redemption',
     'brussels-sprouts': '/guides/brussels-sprouts-redemption',
     beetroot: '/guides/beetroot-redemption',
-    aubergine: '/guides/aubergine-redemption'
+    aubergine: '/guides/aubergine-redemption',
+    broccoli: '/guides/broccoli-redemption',
+    'sweet-potato': '/guides/sweet-potato-redemption',
+    parsnip: '/guides/parsnip-redemption',
+    courgette: '/guides/courgette-redemption',
+    'runner-beans': '/guides/runner-beans-redemption',
+    leek: '/guides/leek-redemption',
+    'bell-pepper': '/guides/bell-pepper-redemption'
   };
   const chapterPath = $derived(chapterGuides[data.veg.id]);
 

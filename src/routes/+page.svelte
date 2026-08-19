@@ -25,7 +25,14 @@
     { name: 'Cabbage', path: '/guides/cabbage-redemption', blurb: 'The smell was in the water, not the vegetable.' },
     { name: 'Brussels sprouts', path: '/guides/brussels-sprouts-redemption', blurb: 'The bitterness that isn\'t the method\'s fault.' },
     { name: 'Beetroot', path: '/guides/beetroot-redemption', blurb: 'The earthiness that isn\'t a cooking mistake.' },
-    { name: 'Aubergine', path: '/guides/aubergine-redemption', blurb: 'The silky-slimy split that isn\'t a method failure.' }
+    { name: 'Aubergine', path: '/guides/aubergine-redemption', blurb: 'The silky-slimy split that isn\'t a method failure.' },
+    { name: 'Broccoli', path: '/guides/broccoli-redemption', blurb: 'The one that was just cooked too long.' },
+    { name: 'Sweet potato', path: '/guides/sweet-potato-redemption', blurb: 'The sweet one that was boiled the good out of.' },
+    { name: 'Parsnip', path: '/guides/parsnip-redemption', blurb: 'The woody core was the problem, not the sweetness.' },
+    { name: 'Courgette', path: '/guides/courgette-redemption', blurb: 'The water you were cooking, not the vegetable.' },
+    { name: 'Runner beans', path: '/guides/runner-beans-redemption', blurb: 'The strings were the problem, not the beans.' },
+    { name: 'Leek', path: '/guides/leek-redemption', blurb: 'The grit and the faff, not the leek.' },
+    { name: 'Bell pepper', path: '/guides/bell-pepper-redemption', blurb: 'The bitter skin, not the pepper.' }
   ];
 </script>
 

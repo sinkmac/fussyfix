@@ -89,6 +89,13 @@
       <a href="/guides/cabbage-redemption">Cabbage chapter</a>
       <a href="/guides/brussels-sprouts-redemption">Brussels sprouts chapter</a>
       <a href="/guides/beetroot-redemption">Beetroot chapter</a>
+      <a href="/guides/broccoli-redemption">Broccoli chapter</a>
+      <a href="/guides/sweet-potato-redemption">Sweet potato chapter</a>
+      <a href="/guides/parsnip-redemption">Parsnip chapter</a>
+      <a href="/guides/courgette-redemption">Courgette chapter</a>
+      <a href="/guides/runner-beans-redemption">Runner beans chapter</a>
+      <a href="/guides/leek-redemption">Leek chapter</a>
+      <a href="/guides/bell-pepper-redemption">Bell pepper chapter</a>
       <a href="/guides/safe-foods-fussy-eaters">Safe foods for fussy eaters</a>
       <a class="primary-button" href="/redeem">{toolCta}</a>
     </section>

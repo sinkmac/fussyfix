@@ -31,7 +31,9 @@ GUIDES = [
     "peas-redemption", "spinach-redemption", "swede-redemption",
     "tomato-redemption", "broad-beans-redemption", "cucumber-redemption",
     "cabbage-redemption", "brussels-sprouts-redemption", "beetroot-redemption",
-    "aubergine-redemption",
+    "aubergine-redemption", "broccoli-redemption", "sweet-potato-redemption",
+    "parsnip-redemption", "courgette-redemption", "runner-beans-redemption",
+    "leek-redemption", "bell-pepper-redemption",
 ]
 
 
