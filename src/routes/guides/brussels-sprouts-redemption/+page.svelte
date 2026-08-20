@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Brussels Sprouts — the Bitterness That Isn\'t the Method\'s Fault';
+  const title = 'Brussels Sprouts Recipe: The Honest Fix (Not for Everyone) | FussyFix';
   const description = 'Why sprouts carry real bitterness — a genetic variant (TAS2R38) makes some people far more sensitive — and what roasting can and cannot do. An honest ceiling, with the best method for those it works for.';
   const path = '/guides/brussels-sprouts-redemption';
   const meta = pageMeta({ title, description, path });

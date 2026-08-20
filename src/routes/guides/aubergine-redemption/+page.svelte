@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Aubergine — the Silky-Slimy Split That Isn\'t a Method Failure';
+  const title = 'Aubergine Recipe: The Fix for Fussy Eaters (No More Sponge) | FussyFix';
   const description = 'Why aubergine divides people: the silky texture some love is the slimy texture others dislike — a genuine preference split, not a cooking error. The honest ceiling, plus the way to avoid the version nobody likes.';
   const path = '/guides/aubergine-redemption';
   const meta = pageMeta({ title, description, path });

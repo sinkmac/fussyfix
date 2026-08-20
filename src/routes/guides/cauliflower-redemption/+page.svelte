@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Cauliflower — the Boiled Nothing That Becomes Something in the Oven';
+  const title = 'Cauliflower Recipe: One Method, No More Mush | FussyFix';
   const description = 'Why boiled cauliflower collapses into sulphurous nothing, and how roasting at high heat turns it sweet, nutty and firm-tender. The method fix, in plain words.';
   const path = '/guides/cauliflower-redemption';
   const meta = pageMeta({ title, description, path });

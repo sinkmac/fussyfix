@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Sweet Potato — the Sweet One You Were Boiling the Good Out Of';
+  const title = 'Sweet Potato Recipe: One Method, No More Mush | FussyFix';
   const description = 'Why sweet potato comes out watery, stringy and bland, and why roasting or charring at high heat caramelises the natural sugars into a sticky crust. The honest note: it is genuinely sweet — that part is real. The method fix that makes it work.';
   const path = '/guides/sweet-potato-redemption';
   const meta = pageMeta({ title, description, path });

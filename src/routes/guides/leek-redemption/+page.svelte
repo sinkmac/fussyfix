@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Leek — the Grit and the Faff, Not the Leek';
+  const title = 'Leek Recipe: The Method That Actually Works | FussyFix';
   const description = 'Why leeks got a name for being fiddly and gritty — the silt trapped between the layers, and a boil that turns them into slippery ribbons. How a proper wash and a char, roast or slow-braise turn the same leek silky and sweet. The method fix.';
   const path = '/guides/leek-redemption';
   const meta = pageMeta({ title, description, path });

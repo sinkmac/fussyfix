@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Courgette — the Water You Were Cooking, Not the Vegetable';
+  const title = 'Courgette Recipe: The Method That Fixes the Sliminess | FussyFix';
   const description = 'Why courgette arrives translucent and watery — it is 95% water, and slow low heat steams it in its own juices. How high heat and a short cook drive the water off, brown the surface and keep the flavour in. The method fix; plus the honest note on its mildness.';
   const path = '/guides/courgette-redemption';
   const meta = pageMeta({ title, description, path });

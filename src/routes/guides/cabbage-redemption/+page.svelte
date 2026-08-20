@@ -3,7 +3,7 @@
   import { pageMeta } from '$lib/pageMeta';
   import { arfidDisclaimer, articleSchema, commonSources, faqSchema, toolCta } from '$lib/editorial';
 
-  const title = 'Cabbage — the Smell Was in the Water, Not the Vegetable';
+  const title = 'Cabbage Recipe: The Method That Kills the Smell | FussyFix';
   const description = 'Why boiled cabbage smells and turns to grey ribbons, and how high heat — charring, blistering, stir-frying — keeps the sulphur out of the house and the sweetness in the leaf. The method fix, in plain words.';
   const path = '/guides/cabbage-redemption';
   const meta = pageMeta({ title, description, path });
