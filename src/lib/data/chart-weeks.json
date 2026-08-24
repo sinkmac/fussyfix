@@ -828,5 +828,171 @@
         "badge": null
       }
     ]
+  },
+  {
+    "week": "2026-W35",
+    "published": "2026-08-28",
+    "entries": [
+      {
+        "position": 1,
+        "vegetableId": "broad-beans",
+        "lastWeek": 1,
+        "weeksOnChart": 7,
+        "peak": 1,
+        "badge": null
+      },
+      {
+        "position": 2,
+        "vegetableId": "broccoli",
+        "lastWeek": 2,
+        "weeksOnChart": 7,
+        "peak": 2,
+        "badge": null
+      },
+      {
+        "position": 3,
+        "vegetableId": "cauliflower",
+        "lastWeek": 3,
+        "weeksOnChart": 7,
+        "peak": 3,
+        "badge": null
+      },
+      {
+        "position": 4,
+        "vegetableId": "courgette",
+        "lastWeek": 4,
+        "weeksOnChart": 7,
+        "peak": 3,
+        "badge": null
+      },
+      {
+        "position": 5,
+        "vegetableId": "cucumber",
+        "lastWeek": 5,
+        "weeksOnChart": 7,
+        "peak": 4,
+        "badge": null
+      },
+      {
+        "position": 6,
+        "vegetableId": "peas",
+        "lastWeek": 6,
+        "weeksOnChart": 7,
+        "peak": 5,
+        "badge": null
+      },
+      {
+        "position": 7,
+        "vegetableId": "runner-beans",
+        "lastWeek": 7,
+        "weeksOnChart": 7,
+        "peak": 6,
+        "badge": null
+      },
+      {
+        "position": 8,
+        "vegetableId": "spinach",
+        "lastWeek": 8,
+        "weeksOnChart": 7,
+        "peak": 7,
+        "badge": null
+      },
+      {
+        "position": 9,
+        "vegetableId": "tomato",
+        "lastWeek": 9,
+        "weeksOnChart": 7,
+        "peak": 9,
+        "badge": null
+      },
+      {
+        "position": 10,
+        "vegetableId": "cabbage",
+        "lastWeek": 10,
+        "weeksOnChart": 7,
+        "peak": 8,
+        "badge": null
+      },
+      {
+        "position": 11,
+        "vegetableId": "potato",
+        "lastWeek": 11,
+        "weeksOnChart": 7,
+        "peak": 10,
+        "badge": null
+      },
+      {
+        "position": 12,
+        "vegetableId": "aubergine",
+        "lastWeek": 12,
+        "weeksOnChart": 7,
+        "peak": 11,
+        "badge": null
+      },
+      {
+        "position": 13,
+        "vegetableId": "bell-pepper",
+        "lastWeek": 13,
+        "weeksOnChart": 7,
+        "peak": 12,
+        "badge": null
+      },
+      {
+        "position": 14,
+        "vegetableId": "sweet-potato",
+        "lastWeek": 14,
+        "weeksOnChart": 7,
+        "peak": 13,
+        "badge": null
+      },
+      {
+        "position": 15,
+        "vegetableId": "carrot",
+        "lastWeek": 15,
+        "weeksOnChart": 7,
+        "peak": 14,
+        "badge": null
+      },
+      {
+        "position": 16,
+        "vegetableId": "brussels-sprouts",
+        "lastWeek": 16,
+        "weeksOnChart": 7,
+        "peak": 16,
+        "badge": null
+      },
+      {
+        "position": 17,
+        "vegetableId": "kale",
+        "lastWeek": 17,
+        "weeksOnChart": 7,
+        "peak": 17,
+        "badge": null
+      },
+      {
+        "position": 18,
+        "vegetableId": "leek",
+        "lastWeek": 18,
+        "weeksOnChart": 7,
+        "peak": 18,
+        "badge": null
+      },
+      {
+        "position": 19,
+        "vegetableId": "parsnip",
+        "lastWeek": 19,
+        "weeksOnChart": 7,
+        "peak": 19,
+        "badge": null
+      },
+      {
+        "position": 20,
+        "vegetableId": "swede",
+        "lastWeek": 20,
+        "weeksOnChart": 7,
+        "peak": 20,
+        "badge": null
+      }
+    ]
   }
 ]
