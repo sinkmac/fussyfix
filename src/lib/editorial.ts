@@ -187,7 +187,7 @@ export function recipeSchema({ name, description, path, steps, alternateMethods,
  * This resolves them to Vite-bundled absolute URLs automatically.
  */
 const vegImageModules: Record<string, string> = import.meta.glob<string>(
-  '../assets/veg/*.jpg',
+  './assets/veg/*.jpg',
   { eager: true, query: '?url', import: 'default' }
 );
 
@@ -209,5 +209,9 @@ export function recipeImage(vegId: string): string | string[] | null {
   const primary = vegImageBase[vegId];
   if (!primary) return null;
   const variants = vegImageVariants[vegId];
-  return variants && variants.length > 0 ? [primary[0], ...variants] : primary[0];
+  const absolutize = (u: string) => (u.startsWith('http') ? u : absoluteUrl(u));
+  const urls = variants && variants.length > 0
+    ? [primary[0], ...variants].map(absolutize)
+    : [absolutize(primary[0])];
+  return urls.length === 1 ? urls[0] : urls;
 }
