@@ -2,7 +2,7 @@
   import SchemaScript from '$lib/SchemaScript.svelte';
   import { pageMeta } from '$lib/pageMeta';
   import { vegetables, methods } from '$lib/data';
-  import { recipeSchema, faqSchema } from '$lib/editorial';
+  import { recipeSchema, faqSchema, recipeImage } from '$lib/editorial';
   import { error } from '@sveltejs/kit';
 
   let { data } = $props();
@@ -54,6 +54,19 @@
   const alternateMethods = $derived(
     data.veg.redemptionMethods.slice(1).map((id) => bestMethod(id)?.name).filter((n): n is string => Boolean(n))
   );
+  // Keywords pulled from existing fields only — no new copy.
+  const recipeKeywords = $derived(
+    [
+      data.veg.name.toLowerCase(),
+      ...data.veg.redemptionMethods
+        .map((id) => bestMethod(id)?.name.toLowerCase())
+        .filter((n): n is string => Boolean(n)),
+      'fussy eater',
+      'kids'
+    ].join(', ')
+  );
+  // Dormant until a real image exists for this veg in src/lib/assets/veg/.
+  const recipeImg = $derived(recipeImage(data.veg.id));
   const recipe = $derived(
     recipeSchema({
       name: `${data.veg.name} — ${leadMethod?.name ?? 'cooked'} method`,
@@ -63,7 +76,9 @@
         name: route,
         text: [t.cookTime, t.prepNote].filter(Boolean).join(' — ')
       })),
-      alternateMethods
+      alternateMethods,
+      keywords: recipeKeywords,
+      image: recipeImg ?? undefined
     })
   );
   const faq = $derived(

@@ -123,8 +123,11 @@ interface RecipeSchema {
   description: string;
   url: string;
   recipeCategory: string;
+  recipeCuisine: string;
   recipeInstructions: RecipeStep[];
   recipeNotes?: string;
+  keywords?: string;
+  image?: string | string[];
 }
 
 interface RecipeSchemaInput {
@@ -133,6 +136,14 @@ interface RecipeSchemaInput {
   path: string;
   steps: RecipeStep[];
   alternateMethods: string[];
+  keywords?: string;
+  /**
+   * Image URL(s) for the Recipe. Google requires at least one image for
+   * rich results; multiple aspect ratios (1:1, 4:3, 16:9) are ideal.
+   * Optional — omitted from output when no image exists yet, so the
+   * schema never ships a dead or fabricated URL.
+   */
+  image?: string | string[];
 }
 
 /**
@@ -142,7 +153,7 @@ interface RecipeSchemaInput {
  * because the data model doesn't carry them — this is method-level markup,
  * not a full recipe card.
  */
-export function recipeSchema({ name, description, path, steps, alternateMethods }: RecipeSchemaInput): RecipeSchema {
+export function recipeSchema({ name, description, path, steps, alternateMethods, keywords, image }: RecipeSchemaInput): RecipeSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'Recipe',
@@ -150,13 +161,53 @@ export function recipeSchema({ name, description, path, steps, alternateMethods 
     description,
     url: absoluteUrl(path),
     recipeCategory: 'Vegetable dish',
+    recipeCuisine: 'British',
     recipeInstructions: steps.map((step) => ({
       '@type': 'HowToStep',
       name: step.name,
       text: step.text
     })),
+    ...(keywords ? { keywords } : {}),
+    ...(image ? { image } : {}),
     ...(alternateMethods.length > 0
       ? { recipeNotes: `Also works: ${alternateMethods.join(', ')}.` }
       : {})
   };
+}
+
+/**
+ * Recipe image URL for a /redeem/[id] page. Dormant until real image assets
+ * are committed: returns null when the veg has no image, and callers must
+ * not emit an image field for null — the schema never ships a dead or
+ * fabricated URL.
+ *
+ * When images land: drop them in src/lib/assets/veg/ as
+ *   <vegId>.jpg                 (primary, ≥1200px wide)
+ *   <vegId>-1x1.jpg / -4x3.jpg / -16x9.jpg   (optional aspect variants)
+ * This resolves them to Vite-bundled absolute URLs automatically.
+ */
+const vegImageModules: Record<string, string> = import.meta.glob<string>(
+  '../assets/veg/*.jpg',
+  { eager: true, query: '?url', import: 'default' }
+);
+
+const vegImageBase: Record<string, string[]> = {};
+for (const [file, url] of Object.entries(vegImageModules)) {
+  const stem = file.split('/').pop()!.replace(/\.jpg$/, '');
+  const [id, variant] = stem.match(/^(.*?)(-1x1|-4x3|-16x9)?$/)!.slice(1).filter(Boolean) as [string, string?];
+  (vegImageBase[id] ??= []).push(...(variant ? [] : [url]));
+}
+// Ordered 1:1, 4:3, 16:9 when all variants exist, else just the primary.
+const vegImageVariants: Record<string, string[]> = {};
+for (const [file, url] of Object.entries(vegImageModules)) {
+  const stem = file.split('/').pop()!.replace(/\.jpg$/, '');
+  const m = stem.match(/^(.*?)(-1x1|-4x3|-16x9)$/);
+  if (m) (vegImageVariants[m[1]] ??= []).push(url);
+}
+
+export function recipeImage(vegId: string): string | string[] | null {
+  const primary = vegImageBase[vegId];
+  if (!primary) return null;
+  const variants = vegImageVariants[vegId];
+  return variants && variants.length > 0 ? [primary[0], ...variants] : primary[0];
 }
