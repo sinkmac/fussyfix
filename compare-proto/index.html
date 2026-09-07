@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Standing Stones — vigil register</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    color: #e8e6df;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:
+      radial-gradient(1200px 600px at 70% 5%, #04050a 0%, #0a0d17 48%, #131a28 100%);
+    overflow-x: hidden;
+  }
+  .wordmark { display: flex; justify-content: space-between; padding: 0.9rem 1.2rem; border-bottom: 1px solid #423f3a; }
+  .wordmark b { font-variant: small-caps; letter-spacing: 0.06em; }
+  .wordmark span { font-size: 0.85rem; color: #8a8f98; }
+  main { padding: 2.2rem 1.4rem 3rem; max-width: 64ch; margin: 0 auto; }
+
+  /* Full-bleed sky: the whole page IS the sky. Type sits over it directly. */
+  .sky {
+    position: fixed; inset: 0; z-index: -1;
+    animation: twinkle 9s ease-in-out infinite alternate;
+    background:
+      radial-gradient(2px 2px at 12% 22%, #cfd6e8 45%, transparent 46%),
+      radial-gradient(1px 1px at 30% 14%, #aab2c8 45%, transparent 46%),
+      radial-gradient(3px 3px at 48% 30%, #dfe4f0 45%, transparent 46%),
+      radial-gradient(1px 1px at 62% 12%, #b9c2dd 45%, transparent 46%),
+      radial-gradient(2px 2px at 78% 24%, #cfd6e8 45%, transparent 46%),
+      radial-gradient(1px 1px at 90% 16%, #aab2c8 45%, transparent 46%),
+      radial-gradient(2px 2px at 8% 82%, #dfe6f0 45%, transparent 46%),
+      radial-gradient(1px 1px at 34% 88%, #b9c2dd 45%, transparent 46%),
+      radial-gradient(2px 2px at 58% 78%, #cfd6e8 45%, transparent 46%),
+      radial-gradient(1px 1px at 72% 86%, #aab2c8 45%, transparent 46%),
+      radial-gradient(2px 2px at 86% 74%, #dfe6f0 45%, transparent 46%);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  }
+  @keyframes twinkle {
+    from { opacity: 1; }
+    to   { opacity: 0.82; }
+  }
+  /* A faint horizon glow rising from the bottom — the site's own alignment light. */
+  .horizon {
+    position: fixed; left: 0; right: 0; bottom: -12vh; height: 32vh; z-index: -1;
+    background: linear-gradient(to top, rgba(200,180,150,0.16), transparent);
+    filter: blur(2px);
+  }
+
+  /* Foreground standing stones — big, close, monumental. */
+  .stones { position: relative; z-index: 1; pointer-events: none; }
+  .stones span { display: block; position: absolute; left: 0; background: #0a0d12; }
+  span.s1 { width: 34vw; height: 40vh; bottom: 0; clip-path: polygon(0 100%, 0 60%, 12% 58%, 12% 100%); }
+  span.s2 { width: 7vw; height: 48vh; left: 12vw; bottom: 0; }
+  span.s3 { width: 26vw; height: 34vh; right: 4vw; bottom: 2vh; clip-path: polygon(0 100%, 0 64%, 10% 64%, 10% 100%); }
+  span.s4 { width: 4vw; height: 30vh; right: 16vw; bottom: 0; }
+  span.s5 { width: 22vw; height: 40vh; right: 8vw; bottom: 0; clip-path: polygon(0 100%, 0 70%, 8% 66%, 10% 100%); }
+  span.s6 { width: 5vw; height: 26vh; left: 44vw; bottom: 0; }
+  span.s7 { width: 20vw; height: 52vh; left: 62vw; bottom: 4vh; }
+
+  /* Hero — inscription: bold, big negative space. */
+  .hero {
+    font-size: clamp(2.2rem, 5.4vw, 4rem);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    max-width: 15ch;
+    text-wrap: balance;
+    margin: 0 0 1.2rem;
+  }
+  .sub { font-style: italic; color: #c9c4ba; font-size: 1.05rem; margin: 0 0 2rem; }
+  .btn { display: inline-block; border: 1px solid #2a4a35; color: #dfe6da; padding: 0.6rem 1.2rem; border-radius: 2px; text-decoration: none; background: #0c1a10; }
+  .routing { font-size: 0.9rem; color: #9a9f98; margin-top: 2.5rem; }
+  .routing a { color: #b7cbb7; }
+</style>
+</head>
+<body>
+  <header class="wordmark">
+    <a href="/"><b>standing stones</b></a>
+    <span>seven sites · vigil register</span>
+  </header>
+
+  <main>
+    <!-- HERO: prototype copy — palette & parallax to be layered. -->
+    <h1 class="hero">The next alignment, and the sites that count it down.</h1>
+    <p class="sub">Prototype: real celestial geometry &amp; per-site palette still to be wired. This is a visual mockup, part of a comparison brief.</p>
+    <a class="btn" href="#">Keep the vigil</a>
+
+    <p class="routing">Seven sites keep a <a href="#">register</a>. Browse the <a href="/register">sites</a>.</p>
+  </main>
+  <footer class="routing">…</footer>
+
+  <!-- Faint arc toward the alignment; silhouette stones in front; stars behind (see .sky). -->
+  <div class="sky" aria-hidden="true"></div>
+  <!-- Alignment arc: a hairline from the horizon-glow toward the bearing -->
+  <i class="arc" aria-hidden="true"></i>
+  <div class="horizon" aria-hidden="true"></div>
+  <div class="stones s1 s2 s3 s4 s5 s6 s7" aria-hidden="true"></div>
+</body>
+</html>
