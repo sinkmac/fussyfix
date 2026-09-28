@@ -22,11 +22,11 @@ def iso_week_to_date(week_str):
     year_s, week_s = week_str.split('-W')
     year = int(year_s)
     week = int(week_s)
-    # Jan 4 of the ISO year is always in week 1
+    # Jan 4 of the ISO year is always in week 1; its Monday is week 1's Monday.
+    # (Old bug: offset from Jan 1 gave the *Friday* of week 1, shifting every
+    # published date 4 days late and corrupting the month at month boundaries.)
     jan4 = date(year, 1, 4)
-    days_to_jan4 = (jan4 - date(year, 1, 1)).days
-    # Monday of week 1
-    week1_monday = date(year, 1, 1) + timedelta(days=(-jan4.weekday() if jan4.weekday() <= 3 else 7 - jan4.weekday()))
+    week1_monday = jan4 - timedelta(days=jan4.weekday())
     return week1_monday + timedelta(weeks=week - 1)
 
 def date_to_iso_week(d):
